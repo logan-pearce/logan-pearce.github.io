@@ -3,11 +3,10 @@ layout: page
 title: "Logan Pearce"
 subtitle: "Astronomy Student"
 bigimg:
-  - "/img/big-imgs/Flagstaff-63.jpg" : "The Orion ''Proplyds'' , Credit: NASA/ESO"
-  - "/img/big-imgs/heic0917absc.jpg" : "Orion, Credit: NASA/ESO"
-  - "/img/big-imgs/alma-starry-night.jpg" : "ALMA, Credit: ESO"
-  - "/img/big-imgs/hltau.jpg" : "HL Tau, Credit: ALMA"
-  - "/img/big-imgs/SMA.jpg" : "SMA, Credit: CfA"
+  - "/img/Flagstaff-63.jpg" : "The Road from Panamint Springs, Death Valley NP"
+  - "/img/Big bend-83.jpg" : "Big Bend Big Sky, Big Bend NP"
+  - "/img/El Capitan (3).jpg" : "El Capitan, Guadalupe NP"
+  - "/img/Arizona-93.jpg" : "Very Large Array"
 ---
 
 I am a 2nd time undergradute student, starting a new career in the Astronomy at The University of Texas at Austin. I'm returning to school after a career in the US Navy and as a middle school science teacher.  I also do photography on the side.
