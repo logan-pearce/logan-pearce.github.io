@@ -3,10 +3,10 @@ layout: page
 title: "Logan Pearce"
 subtitle: "Astronomy Student"
 bigimg:
-  - "/img/Flagstaff-63.jpg" : "The Road from Panamint Springs, Death Valley NP"
-  - "/img/Big bend-83.jpg" : "Big Bend Big Sky, Big Bend NP"
-  - "/img/El Capitan (3).jpg" : "El Capitan, Guadalupe NP"
-  - "/img/Arizona-93.jpg" : "Very Large Array"
+  - "/img/img4_deathvalley.jpg" : "The Road from Panamint Springs, Death Valley NP"
+  - "/img/img2_bigbend.jpg" : "Big Bend Big Sky, Big Bend NP"
+  - "/img/img3_elcapitan.jpg" : "El Capitan, Guadalupe NP"
+  - "/img/img1_vla.jpg" : "Very Large Array"
 ---
 
 I am a 2nd time undergradute student, starting a new career in the Astronomy at The University of Texas at Austin. I'm returning to school after a career in the US Navy and as a middle school science teacher.  I also do photography on the side.
