@@ -7,7 +7,6 @@ bigimg:
   - "img3_elcapitan.jpg" : "El Capitan, Guadalupe NP"
   - "img1_vla.jpg" : "Very Large Array"
 ---
-{% include mathjs %}
 
 ## Orbital Motion of Wide Planetary-Mass Companions to Low-Mass Stars
 ### Advisor: Adam Kraus
