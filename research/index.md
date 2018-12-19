@@ -12,7 +12,7 @@ bigimg:
 ## Orbital Motion of Wide Planetary-Mass Companions to Low-Mass Stars
 ### Advisor: Adam Kraus
 ### Univ of Texas at Austin, 2017-2019
-***
+
 Planetary mass companions are large mass planets (on the order of 15 Mjup)  on wide orbits (100's of AU) from their host stars.  They exist in a parameter such that it is unclear if they represent the high end of planetary masses, the low end of brown dwarf masses, or if there is even is a dividing line in the substellar mass function at all.  There are a handful of these wide orbit companions that have been discovered through direct imaging surveys of young low mass stars.  Their wide orbits and young ages make them ideal for testing planet and star formation models, because they are young enough and wide enough that they can be studied relatively easily through high contrast imaging.
 
 My work has focused on an orbital analysis of one particular wide orbit planetary mass companion, GSC 6214-210 b.  It is a 15 Mjup companion to a K5 dwarf star in the Upper Scorpious star-forming region.  GSC 6214-210 b has been observed with the NIRC2 camera on the Keck II telescope for 10 years, enough to measure the relative astrometry and test for orbital motion.  I developed my own PSF-fitting relative astrometry algorithm to observe orbital motion, then fit orbital parameters to my astrometry using a custom implementation of the Orbits for the Impatient algorithm (Blunt et. al. 2017).
@@ -27,6 +27,7 @@ I am also a part of the orbitize! project -- an open-source object-oriented pyth
 
 <center>[Orbitize! Docs](https://orbitize.readthedocs.io/en/latest/)</center>
 
+***
 
 
 
