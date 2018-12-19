@@ -25,7 +25,7 @@ description: Astronomy Student
 navbar-links:
   Research: "research"
   Publications: "publications"
-  About Me: "aboutme"
+  # About Me: "aboutme"
   CV: "resume_logan_pearce.pdf"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
