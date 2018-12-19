@@ -17,6 +17,10 @@ Planetary mass companions are large mass planets (on the order of 15 Mjup)  on 
 
 My work has focused on an orbital analysis of one particular wide orbit planetary mass companion, GSC 6214-210 b.  It is a 15 Mjup companion to a K5 dwarf star in the Upper Scorpious star-forming region.  GSC 6214-210 b has been observed with the NIRC2 camera on the Keck II telescope for 10 years, enough to measure the relative astrometry and test for orbital motion.  I developed my own PSF-fitting relative astrometry algorithm to observe orbital motion, then fit orbital parameters to my astrometry using a custom implementation of the Orbits for the Impatient algorithm (Blunt et. al. 2017).
 
+| [![HST model](../img/mask.png){: class="image-100" }](../img/mask.pdf) | [![Baselines](../img/baselines.png){: class="image-100" }](../img/baselines.pdf) |
+|:---:|:---:|
+| HST aperture model | Baselines from the model colored by redundancy |
+
 We found that orbital element posteriors for GSC 6214-210 b, along with complementary lines of evidence,  make formation at close orbital radius, consistent with the core accretion model of planet formation, and subsequent dynamical scattering to its current wide radius is highly unlikely.  Star formation pathways such as gravitational instability are more likely to explain this object's current orbit.  Other orbital studies of other wide planetary-mass companions have made similar conclusions (see Bryan et. al. 2016).  This could indicate that dynamical scattering it not a dominant formation pathway for these objects.  This work can easily be repeated for other directly imaged wide companion systems.
 
 Publication expected winter of 2018
