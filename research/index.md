@@ -24,11 +24,11 @@ We found that orbital element posteriors for GSC 6214-210 b, along with compleme
 
 Publication expected winter of 2018
 
-<center>[GitHub repo for this project](https://github.com/logan-pearce)</center>
+[GitHub repo for this project](https://github.com/logan-pearce)
 
 I am also a part of the orbitize! project -- an open-source object-oriented python package for fitting orbital parameters to directly-imaged planet astrometry.  Orbitize! allows users to select from multiple parameter fitting methodologies, including OFTI, that are statistically robust, and outputs fits and plots of the results.  Orbitize! version 1 is expected in September 2018.
 
-<center>[Orbitize! Docs](https://orbitize.readthedocs.io/en/latest/)</center>
+[Orbitize! Docs](https://orbitize.readthedocs.io/en/latest/)
 
 ***
 
