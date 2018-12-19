@@ -9,7 +9,7 @@ bigimg:
 ---
 {% include mathjs %}
 
-# Orbital Motion of Wide Planetary-Mass Companions to Low-Mass Stars
+## Orbital Motion of Wide Planetary-Mass Companions to Low-Mass Stars
 ### Advisor: Adam Kraus
 ### Univ of Texas at Austin, 2017-2019
 ***
