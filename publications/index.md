@@ -8,4 +8,3 @@ bigimg:
   - "../img/img3_elcapitan.jpg" : "El Capitan, Guadalupe NP"
   - "../img/img1_vla.jpg" : "Very Large Array"
 ---
-{% include mathjs %}
