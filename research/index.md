@@ -16,7 +16,8 @@ Planetary mass companions are large mass planets (on the order of 15 Mjup)  on 
 
 My work has focused on an orbital analysis of one particular wide orbit planetary mass companion, GSC 6214-210 b.  It is a 15 Mjup companion to a K5 dwarf star in the Upper Scorpious star-forming region.  GSC 6214-210 b has been observed with the NIRC2 camera on the Keck II telescope for 10 years, enough to measure the relative astrometry and test for orbital motion.  I developed my own PSF-fitting relative astrometry algorithm to observe orbital motion, then fit orbital parameters to my astrometry using a custom implementation of the Orbits for the Impatient algorithm (Blunt et. al. 2017).
 
-| ![NIRC2 Image and Astrometry](../img/GSC6214_2017_color1.png) {:height="36px" width="36px"}|
+#| ![NIRC2 Image and Astrometry](../img/GSC6214_2017_color1.png) {:height="36px" width="36px"}|
+| <img src="../img/GSC6214_2017_color1.png" alt="image" width="200"/> |
 |:---:|
 | <sub><sup> NIRC2 image of GSC 6214-210, with its companion seen just to the south and east.  Inset: Relative motion of the companion found in this study.  Error bars to the left represent median error in individual image posteriors </sup></sub>|
 | ![Accepted Orbits](../img/GSC6214_acceptedorbits_black.png) {:height="36px" width="36px"}|
