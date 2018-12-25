@@ -61,7 +61,16 @@ My project, conducted as part of an NSF REU, was to investigate the behavior of 
 
 I found that adding nitrogen did affect the freezing point of the mixtures, but they remained below Titan's seasonal temperature range, suggesting that ice would not form in Titan lakes if they existed at these concentrations.  However, I only explored a small fraction of the ternary phase space for these mixtures, there are a lot of possible other concentrations of the lakes to explore, as well as the influence of other chemical species which could exist in the lakes.
 
+| ![A sample at the liquidus (freezing point)](../img/liquidus.png)| ![Freezing Points](../img/freezing_points_plot.png)|
+|:---:|:---:|
+| <sub><sup> A liquid sample just at the freezing point (liquidus).  Small crystals can be seen beginning to form in the right hand side of the sample chamber. </sup></sub>|<sub><sup> Plot of measured freezing points as a function of nitrogen concentration in the sample. </sup></sub> |
+
 I discovered something else interesting in the course of my study.  The experiments in the 60-70% N2 range had boiling points very near to their freezing point, making it impossible to observe the freezing.  To ameliorate this, I elevated the pressure in the chamber to raise the boiling point far enough above the freezing point to allow them to be independently observed.  During those higher-pressure experiments I noticed something strange.  Image A shows a sample at the normal experimental pressure of 1 Bar.  We see little ripples in the liquid, indicating that there are two liquids here that are mingling but not mixing.  Image B shows a sample at the elevated sample pressure of ~2 Bar.  There are now two distinct liquid liquid layers of different densities.  The two liquids have separated, and there is a distinct meniscus between them.  What's more, the top layer condensed out first as the sample was cooled, and the liquid that formed the bottom layer would condense on the top meniscus and drip down through the top layer, growing the bottom layer as it cooled.  In Image B you can just see one of these drops forming on the bottom of the top meniscus.  We measured both layers to contain all three chemical species, but in different amounts (one was nitrogen-rich, the other ethane-rich).  This only occurred in the high pressure experiments.  The explanation for this behavior remains unclear and is being investigated at NAU.
+
+
+| ![Layers](../img/liquid_layers.png)|
+|:---:|
+| <sub><sup> A: a sample at 1 bar pressure B: a sample at 2 bar pressure.  Two liquid layers are present with a vapor layer above, and the bottom layer liquid can be seen forming a drip on the meniscus of the top layer. </sup></sub>|
 
 
 
