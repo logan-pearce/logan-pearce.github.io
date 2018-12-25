@@ -38,11 +38,11 @@ I am also a part of the orbitize! project -- an open-source object-oriented pyth
 
 The Breakthrough Listen Project, at the Berkeley SETI Research Center in Berkeley, CA, will be conducting targeted SETI observations on the newly commissioned MeerKAT interferometric radio telescope in South Africa.  Observations will be commensal - BL will not have control of the telescope, and instead will piggyback off of the observations of the numerous large survey programs (LSPs) that have been approved to observe on MeerKAT.  BL intends to observe 1 million stars with MeerKAT - the largest coordinated SETI program in history.  My project, conducted at the BSRC summer internship in 2018, was to create the target list of 1 million stars for the MeerKAT program.
 
-The Gaia Data Release 2 catalog was the starting point for our target list.  Gaia DR2 contains astrometric information for 1.7 billion objects within our galaxy.  After applying strict data quality filters, we narrowed the catalog to 32 million high-quality Gaia objects within MeerKAT's field of view from which to draw our target list.
+The Gaia Data Release 2 catalog was the starting point for our target list.  Gaia DR2 contains astrometric information for 1.7 billion objects within our galaxy.  After applying strict data quality filters, we narrowed the catalog to 27 million high-quality Gaia objects within MeerKAT's field of view from which to draw our target list.
 
-| ![Pointings](https://github.com/logan-pearce/breakthroughlisten/blob/master/pointings.png)| ![Accepted Orbits](../img/GSC6214_acceptedorbits_black_sm.png)|
-|:---:|:---:|
-| <sub><sup> NIRC2 image of GSC 6214-210, with its companion seen just to the south and east.  Inset: Relative motion of the companion found in this study.  Error bars to the left represent median error in individual image posteriors </sup></sub>|<sub><sup> 100 randomly selected orbits from the posterior of accepted orbital parameters from the OFTI algorithm. </sup></sub> |
+| ![Pointings](https://github.com/logan-pearce/breakthroughlisten/blob/master/pointings.png)|
+|:---:|
+| <sub><sup> Anticipated pointings of the MeerKAT Large Survey Programs, plotted over a histogram of all the sources in Gaia DR2 with high quality solutions that fall within MeerKAT's field of view (grey) </sup></sub>|
 
 But because the observing will be commensal, the objects on our target list need to be ones we have a reasonable expectation of actually observing.  So, to the greatest extent possible, we determined as many of the specific pointings of each of the MeerKAT LSPs as we could.  All objects on the high-quality Gaia subset within each pointing were put on the target list.  We also included a volume complete sample of all objects in the high-quality subset out to 160 pc, to accommodate any unanticipated pointings.  We also added nearby stars which are too bright to be in the Gaia catalog and fall within MeerKAT's field of view.  This brought us to just under 1.2 million objects on our target list!
 
