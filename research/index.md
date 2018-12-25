@@ -40,6 +40,10 @@ The Breakthrough Listen Project, at the Berkeley SETI Research Center in Berk
 
 The Gaia Data Release 2 catalog was the starting point for our target list.  Gaia DR2 contains astrometric information for 1.7 billion objects within our galaxy.  After applying strict data quality filters, we narrowed the catalog to 32 million high-quality Gaia objects within MeerKAT's field of view from which to draw our target list.
 
+| ![Pointings](https://github.com/logan-pearce/breakthroughlisten/blob/master/pointings.png)| ![Accepted Orbits](../img/GSC6214_acceptedorbits_black_sm.png)|
+|:---:|:---:|
+| <sub><sup> NIRC2 image of GSC 6214-210, with its companion seen just to the south and east.  Inset: Relative motion of the companion found in this study.  Error bars to the left represent median error in individual image posteriors </sup></sub>|<sub><sup> 100 randomly selected orbits from the posterior of accepted orbital parameters from the OFTI algorithm. </sup></sub> |
+
 But because the observing will be commensal, the objects on our target list need to be ones we have a reasonable expectation of actually observing.  So, to the greatest extent possible, we determined as many of the specific pointings of each of the MeerKAT LSPs as we could.  All objects on the high-quality Gaia subset within each pointing were put on the target list.  We also included a volume complete sample of all objects in the high-quality subset out to 160 pc, to accommodate any unanticipated pointings.  We also added nearby stars which are too bright to be in the Gaia catalog and fall within MeerKAT's field of view.  This brought us to just under 1.2 million objects on our target list!
 
 Lastly, I wrote a script which takes in a list of RA/Dec pointings, with optional selection criteria, and returns all of the target list objects you could observe, and any objects which might be interesting for SETI science such as confirmed exoplanet hosts or pulsar which fall within the beam.  This script will be an essential part of BL's observing operations with MeerKAT.
