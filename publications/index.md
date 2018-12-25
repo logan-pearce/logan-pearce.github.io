@@ -27,3 +27,9 @@ Meeting Abstracts, 231, 148.22. [Orbital Motion of the Wide Planetary Mass Compa
 Meeting Abstracts, 230, 118.05. [Constraining the allowed orbits of the directly imaged planetary mass companion GSC 6214-210 b](http://adsabs.harvard.edu/abs/2017AAS...23011805P)
 
 * Hanley, J.; **Pearce, L.**; Thompson, G.; Grundy, W.; Roe, H; Dustrud, S.; Trilling, D.; Tegler, S. (2017), 48th Lunar and Planetary Science Conference, Contribution No. 1964, id.1686.  [Methane, Ethane, and Nitrogen stability on Titan](http://adsabs.harvard.edu/abs/2017LPI....48.1686H)
+
+### Presentations:
+* UC Berkeley Astronomy Department intern poster session, Univ of California Berkeley, 2018 [Poster](../img/seti_poster_v2.jpg)
+* Star and Planet Formation in the Southwest Conference, Oracle AZ, 2018 [Poster](../img/AAS_231_poster.jpg)
+* 231st American Astronomical Society Meeting, National Harbor, MD, 2018 [Poster](../img/AAS_231_poster.jpg)
+* College of Natural Sciences Undergraduate Research Forum, University of Texas Austin, 2017 [Poster](../img/nau_poster.jpg)
