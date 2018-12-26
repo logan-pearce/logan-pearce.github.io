@@ -7,7 +7,7 @@ bigimg:
   - "/img/img2_bigbend.jpg" : "Big Bend Big Sky, Big Bend NP"
   - "/img/img3_elcapitan.jpg" : "El Capitan, Guadalupe NP"
   - "/img/img1_vla.jpg" : "Very Large Array"
-  - "/img/Scan001.jpg" : "Skagit Valley and Mount Baker, WA
+  - "/img/Scan001.jpg" : "Skagit Valley and Mount Baker, WA"
 ---
 
 I am a 2nd time undergradute student, starting a new career in the Astronomy at The University of Texas at Austin. I'm returning to school after a career in the US Navy and as a middle school science teacher.  I also do photography on the side.
