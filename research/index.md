@@ -5,7 +5,12 @@ bigimg:
   - "/img/img4_deathvalley.jpg" : "The Road from Panamint Springs, Death Valley NP"
   - "/img/img2_bigbend.jpg" : "Big Bend Big Sky, Big Bend NP"
   - "/img/img3_elcapitan.jpg" : "El Capitan, Guadalupe NP"
-  - "/img/img1_vla.jpg" : "Very Large Array"
+  - "/img/img1_vla.jpg" : "Very Large Array, NM"
+  - "/img/Scan001.jpg" : "Skagit Valley and Mount Baker, WA"
+  - "/img/Flagstaff-180.jpg" : "Bryce Canyon NP"
+  - "/img/antelope-29.JPG" : "Antelope Canyon Navajo Tribal Park, AZ"
+  - "/img/arches-4_5_6_tonemapped1.jpg" : "Delicate Arch, Arches NP"
+  - "/img/island-2.JPG" : "Waipio Valley, Hawaii"
 ---
 
 ## Orbital Motion of Wide Planetary-Mass Companions to Low-Mass Stars
