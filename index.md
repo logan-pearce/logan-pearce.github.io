@@ -11,6 +11,7 @@ bigimg:
   - "/img/Flagstaff-180.jpg" : "Bryce Canyon NP"
   - "/img/antelope-29.JPG" : "Antelope Canyon Navajo Tribal Park, AZ"
   - "/img/arches-4_5_6_tonemapped1.jpg" : "Delicate Arch, Arches NP"
+  - "/img/island-2.JPG" : "Waipio Valley, Hawaii"
 ---
 
 I am a 2nd time undergradute student, starting a new career in the Astronomy at The University of Texas at Austin. I'm returning to school after a career in the US Navy and as a middle school science teacher.  I also do photography on the side.
