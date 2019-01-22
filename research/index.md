@@ -29,6 +29,8 @@ We found that orbital element posteriors for GSC 6214-210 b, along with compleme
 
 Accepted to the Astronomical Journal.  [ArXiv entry](https://arxiv.org/abs/1812.08860)
 
+Poster from AAS 233, 2019.  [Poster](https://github.com/logan-pearce/logan-pearce.github.io/blob/master/img/poster_aas233.png)
+
 [GitHub repo for this project](https://github.com/logan-pearce)
 
 I am also a part of the orbitize! project -- an open-source object-oriented python package for fitting orbital parameters to directly-imaged planet astrometry.  Orbitize! allows users to select from multiple parameter fitting methodologies, including OFTI, that are statistically robust, and outputs fits and plots of the results.  Orbitize! version 1 is expected in September 2018.
@@ -52,6 +54,9 @@ The Gaia Data Release 2 catalog was the starting point for our target list.  
 But because the observing will be commensal, the objects on our target list need to be ones we have a reasonable expectation of actually observing.  So, to the greatest extent possible, we determined as many of the specific pointings of each of the MeerKAT LSPs as we could.  All objects on the high-quality Gaia subset within each pointing were put on the target list.  We also included a volume complete sample of all objects in the high-quality subset out to 160 pc, to accommodate any unanticipated pointings.  We also added nearby stars which are too bright to be in the Gaia catalog and fall within MeerKAT's field of view.  This brought us to just under 1.2 million objects on our target list!
 
 Lastly, I wrote a script which takes in a list of RA/Dec pointings, with optional selection criteria, and returns all of the target list objects you could observe, and any objects which might be interesting for SETI science such as confirmed exoplanet hosts or pulsar which fall within the beam.  This script will be an essential part of BL's observing operations with MeerKAT.
+
+Poster from intern symposium, 2018.  [SETI Poster](https://github.com/logan-pearce/logan-pearce.github.io/blob/master/img/poster_v2.png)
+
 
 [GitHub repo for this project](https://github.com/logan-pearce/breakthroughlisten)
 
