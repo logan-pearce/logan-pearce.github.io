@@ -27,9 +27,9 @@ My work has focused on an orbital analysis of one particular wide orbit planetar
 
 We found that orbital element posteriors for GSC 6214-210 b, along with complementary lines of evidence,  make formation at close orbital radius, consistent with the core accretion model of planet formation, and subsequent dynamical scattering to its current wide radius is highly unlikely.  Star formation pathways such as gravitational instability are more likely to explain this object's current orbit.  Other orbital studies of other wide planetary-mass companions have made similar conclusions (see Bryan et. al. 2016).  This could indicate that dynamical scattering it not a dominant formation pathway for these objects.  This work can easily be repeated for other directly imaged wide companion systems.
 
-Accepted to the Astronomical Journal.  [ArXiv entry](https://arxiv.org/abs/1812.08860)
+[Published in AJ, Vol 157:71](https://iopscience.iop.org/article/10.3847/1538-3881/aafacb/meta) [ArXiv entry](https://arxiv.org/abs/1812.08860)
 
-Poster from AAS 233, 2019.  [Poster](https://github.com/logan-pearce/logan-pearce.github.io/blob/master/img/poster_aas233.png)
+ [Poster from AAS 233, 2019.](https://github.com/logan-pearce/logan-pearce.github.io/blob/master/img/poster_aas233.png)
 
 [GitHub repo for this project](https://github.com/logan-pearce)
 
