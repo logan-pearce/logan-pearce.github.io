@@ -19,7 +19,7 @@ bigimg:
 
 Planetary mass companions are large mass planets (on the order of 15 Mjup)  on wide orbits (100's of AU) from their host stars.  They exist in a parameter such that it is unclear if they represent the high end of planetary masses, the low end of brown dwarf masses, or if there is even is a dividing line in the substellar mass function at all.  There are a handful of these wide orbit companions that have been discovered through direct imaging surveys of young low mass stars.  Their wide orbits and young ages make them ideal for testing planet and star formation models, because they are young enough and wide enough that they can be studied relatively easily through high contrast imaging.
 
-My work has focused on an orbital analysis of one particular wide orbit planetary mass companion, GSC 6214-210 b.  It is a 15 Mjup companion to a K5 dwarf star in the Upper Scorpious star-forming region.  GSC 6214-210 b has been observed with the NIRC2 camera on the Keck II telescope for 10 years, enough to measure the relative astrometry and test for orbital motion.  I developed my own PSF-fitting relative astrometry algorithm to observe orbital motion, then fit orbital parameters to my astrometry using a custom implementation of the Orbits for the Impatient algorithm (Blunt et. al. 2017).
+My work has focused on an orbital analysis of one particular wide orbit planetary mass companion, GSC 6214-210 b.  It is a 15 Mjup companion to a K5 dwarf star in the Upper Scorpious star-forming region.  GSC 6214-210 b has been observed with the NIRC2 camera on the Keck II telescope for 10 years, enough to measure the relative astrometry and test for orbital motion.  I developed my own PSF-fitting relative astrometry algorithm to observe orbital motion, then fit orbital parameters to my astrometry using a custom implementation of the Orbits for the Impatient (OFTI) algorithm (Blunt et. al. 2017).
 
 | ![NIRC2 Image and Astrometry](../img/GSC6214_2017_color1_sm.png)| ![Accepted Orbits](../img/GSC6214_acceptedorbits_black_sm.png)|
 |:---:|:---:|
@@ -31,6 +31,8 @@ We found that orbital element posteriors for GSC 6214-210 b, along with compleme
 [ArXiv entry](https://arxiv.org/abs/1812.08860)
 
  [Poster from AAS 233, 2019.](https://github.com/logan-pearce/logan-pearce.github.io/blob/master/img/poster_aas233.png)
+ 
+ I have also been adapting the OFTI methodology to fit wide binary stars with well-defined astrometry and proper motions in Gaia.  The precision of Gaia astrometry allows us to fit one observational epoch using the stars' relative RA/Dec, proper motion in RA/Dec, and radial velocity (either from Gaia (rare) or independant measurements).  Additionally accelerations can be used to constrain orbits.  The equations are derived here: [Position Vector Equations](https://github.com/logan-pearce/LOFTI/blob/master/Using_Position_Vector/Solving_for_orbital_elements_given_position_vector_obs.pdf)
 
 [GitHub repo for this project](https://github.com/logan-pearce)
 
