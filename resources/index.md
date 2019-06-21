@@ -23,6 +23,7 @@ This will come from my experience with astronomy grad programs, but I'm sure its
 ### NSF Graduate Research Fellowship
 ---
 [NSF website](https://www.nsfgrfp.org/) about the fellowship requirements and application process.
+
 [Alex Lang's](https://www.alexhunterlang.com/nsf-fellowship) website has great info and advice about the fellowship and many people's example successful research proprosals.
 
 #### Unsolicitied advice:
