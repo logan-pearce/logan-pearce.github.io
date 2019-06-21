@@ -25,6 +25,7 @@ description: Astronomy Student
 navbar-links:
   Research: "research"
   Publications: "publications"
+  Resources: "resources"
   Github: "https://github.com/logan-pearce"
   # About Me: "aboutme"
   CV: "resume_logan_pearce.pdf"
