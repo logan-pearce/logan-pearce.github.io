@@ -33,7 +33,7 @@ From what I've learned, by far the most important component of both essays in th
 
 Another thing to remember is that they are looking to fund the scientist, not necessarily the project.  Especially if you're applying as an undergrad, you won't know where you'll be going for grad school or what you'll be doing, so it's difficult to propose a project you will realistically be doing.  Don't let that hang you up.  Propose an interesting project you can write well about.  They want to see that you can write a convincing proposal and understand the importance of the work on the larger scope of the scientific conversation in that area.
 
-My research statement and personal statement are here.
+My [research statement](NSF_GRFP_Proposal.pdf) and [personal statement](NSF_GRFP_Personal_Statement.pdf).
 
 
 ### Graduate Programs
@@ -54,11 +54,28 @@ Get people to read your essays!  If your university has a writing center, get th
 Remember that the admission committee is trying to select applicants for which their institution is the best fit for them and for you.  Rejections often aren't personal, or necessarily aren't because of some flaw in your application.  For example, I got a rejection from one institution because the faculty there in my chosen subfield within astronomy weren't taking any students.  It would be a disservice for me to attend their school, and they can offer my slot to someone for whom it's a better fit, even though the liked my application.  So don't be overly discouraged by rejections.  Remember, all you need is one admission and you're going to grad school!  And even if you don't get any, there will be more opportunities to apply again, and you can use the experinece to strengthen your application next time.
 
 Here are the essays from institution for which I was offered admission.  (I did recieve several rejections as well, but I wanted to share the successful ones):
+- [one](Arizona_Statement_of_Purpose.pdf)
+- [two](Caltech_Statement_of_Purpose.pdf)
+- [three](Harvard_Statement_of_Purpose.pdf)
+- [four](Hawaii_Statement_of_Purpose.pdf)
+- [five personal statement](Michigan_Personal_Statement.pdf) and [statement of purpose](Michigan_Statement_of_Purpose.pdf)
 
 
 ### REUs and summer programs:
 ---
 Really the above advice applies to summer program essays as well.  Here are my successful essays, ones that resulted in an offer:
+- [one](Berkeley_internship_cover_letter_logan_pearce.pdf)
+- [two](CfA_essay_loganpearce.pdf)
+- [three](IfA_essay.pdf)
+
+### Awards
+---
+I was also fortunate to be awarded the Barry Goldwater Scholarship and the Astronaut Scholarship Foundation Scholarship.  Here are my application materials for those:
+- [Goldwater Research Essay](Goldwater_2018-Research-Essay-LPearce.pdf) and [short answer](Goldwater_short_answer.pdf)
+- [ASF](Logan-Pearce-personal-statement.pdf)
+
+
+# These are all to be used for inspiration and guidance only.  Do not distribute without authorization.
 
 
 
