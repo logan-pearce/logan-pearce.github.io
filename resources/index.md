@@ -60,6 +60,21 @@ Here are the essays from institution for which I was offered admission.  (I did 
 - [four](Hawaii_Statement_of_Purpose.pdf)
 - [five personal statement](Michigan_Personal_Statement.pdf) and [statement of purpose](Michigan_Statement_of_Purpose.pdf)
 
+#### My decision process:
+If you get multiple offers, it can be super duper hard to make the final decision.  Here I just wanted to write about how I made the decision, because learning about the things that were important in others' decision-making process was helpful for me.  I hope this helps some.
+
+I got offers to five top schools, which was so encouraging and a little overwhelming.  How do I say no to these bigs names??  All of them had good reputations, so I knew I couldn't make a bad decision, I just wanted to make the best decision *for me*.  I ended up visiting four of them.  I had spent a lot of time researching who was at each school and who I wanted to be sure to meet on my visit.  (Oh, and definitely do the visit if you're considering a school!). 
+
+I also looked into the housing market in each city, and the availbility of affordable housing near the school, because I wanted the option to commute without a car if possible.  It was also imporant to me to be able to live alone.  Three of the four locations were in high-priced housing areas.  In the fourth, I could afford to actually buy property, which is the best option actually since I'm going to be there for 5-6 years, enough time to get some return on that investment.  That was a big part of the decision, I'd say I weighted the location around 40% in the final decision.
+
+All of the visits were fantastic, and I was impressed with all the schools.  I weighed the feel of the department - did I feel welcomed? like they really wanted me to come there (some schools really did a good job making me feel like they badly wanted me to come there)? were the grad students happy? do they seem like a group I'd really like to be a part of?  would I like spending a lot of time with other students in my visit group?  All of these are important, but weren't major parts of the decision for me.
+
+In the end I narrowed it down to two schools based on all of the above.  The final thing that tipped the scales for me was who I would work for and what I could pursue as a PhD thesis if I went there.  At school #1 there was one person I was very much interested in working with who was doing very exiciting things.  At school #2, there were more like 4 or 5 people.  I was excited by the possibility of building a thesis project with several of them, covering many different aspects of my subfield.  It felt like there was a lot of room to try things out and change my mind and shift around.  I very much hope to work with the faculty at school #1 at some point, but this ended up being the deciding factor in my ultimate decision for school #2.  
+
+It was a very hard decision that I agonized over for weeks.  I also processed the decision with my UG faculty advisor and a few other folks at my UG institution.  
+
+UGs, please feel free to email me with questions or whatever.
+
 
 ### REUs and summer programs:
 ---
