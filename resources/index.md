@@ -75,6 +75,8 @@ It was a very hard decision that I agonized over for weeks.  I also processed th
 
 UGs, please feel free to email me with questions or whatever.
 
+*one last peice of advice:* . It's so so tempting to look around as your peers are getting offers, and to compare your grad school admissions story to theirs.  Just remember, their story is not your story.  Their success does not take anything away from you.  Try your best to consider just the options in front of you, and not compare them to your peers who maybe be doing "better" or "worse" than you are in this process.  Everyone has a long and grueling process in this grad school things.  Let's try to build each other up and celebrate and encourage each other.  Your story is your own. <\soapbox>
+
 
 ### REUs and summer programs:
 ---
