@@ -14,7 +14,7 @@ bigimg:
   - "/img/island-2.JPG" : "Waipio Valley, Hawaii"
 ---
 
-I am a graduate student at the University of Arizona's Steward Observatory, working with Dr. Jared Males and the MagAO-X team on imaging debris disks in scattered light with MagAO-X. I'm returning to school after a career in the US Navy and as a middle school science teacher.  I also do photography on the side.
+I am a graduate student at the University of Arizona's Steward Observatory, working with Dr. Jared Males and the MagAO-X team on sarching for faint companions and imaging debris disks in scattered light with MagAO-X. I'm returning to school after a career in the US Navy and as a middle school science teacher.  I also do photography on the side.
 
 I also work with Dr Adam Kraus at the University of Texas on directly imaged massive planets on wide orbits from their host star.  By studying their current possible orbits, I am searching for clues about how they could have formed.  To see what I've found so far, check out my [research](research) page, which also details other projects I've done in planetary science and SETI.  For my publications, presentations and CV, see my [publications](/publications) page.  
 
