@@ -31,8 +31,9 @@ The monitoring of orbits is one of the oldest tools used to measure the properti
 
 I adapted the Orbits for the Impatient (OFTI; Blunt et al. 2017) to fit Gaia relative separation and proper motion for a selection of wide binaries for which both components are well resolved.  I examined the orbital element constraints produced by fitting with Gaia only, and compared it to orbital element constraints from long time baseline astrometric monitoring from the Washington Double Star Catalog.  For example, this plot shows orbit fit results for DS Tuc B relative to DS Tuc A using Gaia astrometry (left) and WDS astrometry spanning a 100 year observational period (right).  (The WDS astrometry points are overplotted in the Gaia plot for comparison, they were not used in the Gaia fit).  The Gaia orbit fit results are significantly better constrained than WDS, and did not require 100 years of orbit monitoring to obtain.  The Gaia fit results were used in the [Newton et al. 2019](https://arxiv.org/pdf/1906.10703.pdf) paper reporting the discovery of a transiting planet around DS Tuc A, to show that the binary orbit axis is nearly aligned with the stellar spin and planet orbit axes.
 
- ![Gaia only](../img/DSTuc_gaia_pvfit_orbits_w_wdsastr.png)| ![WDS only](../img/DSTuc_astr_plus_orbits.png)|
+| ![Gaia only](../img/DSTuc_gaia_pvfit_orbits_w_wdsastr.png)| ![WDS only](../img/DSTuc_astr_plus_orbits.png)|
 |:---:|:---:|
+| <sub><sup> </sup></sub>|<sub><sup> </sup></sub> |
 
 I found that Gaia alone is sufficient for producing reliable orbital element posteriors under some conditions:
 * Both objects have well-defined solutions in Gaia DR2 with [RUWE](https://gea.esac.esa.int/archive/documentation/GDR2/Gaia_archive/chap_datamodel/sec_dm_main_tables/ssec_dm_ruwe.html) ~ 1.0 and large parallax_over_error values (>~ 10)
