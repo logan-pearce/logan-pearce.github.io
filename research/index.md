@@ -13,13 +13,46 @@ bigimg:
   - "/img/island-2.JPG" : "Waipio Valley, Hawaii"
 ---
 
+## Binary Differential Imaging
+### Advisor: Jared Males
+### Univ of Arizona, 2019 -
+
+A difficulty in direct imaging searches for faint planet or brown dwarf companions close to their host stars is to sufficiently subtract the point spread function of the host star from the image without also removing flux from the faint companion.  Reference differential imaging (RDI) uses images of similar stars to build up a model reference PSF, which does not include a faint companion, which is then subtracted from the science target to reveal the flux from the companion.  [Binary Differential Imaging (BDI)](https://arxiv.org/abs/1509.00007)  is a similar technique which uses binary stars to build up the model PSF.
+
+In BDI, two stars are imaged simultaneously in the same wavelength and same isoplanatic patch at high Strehl ratios.  The reference PSF for one star is then built up using principle component analysis (PCA) from images of the other, and vice versa.  I am working on performing BDI on datasets of 22 binary systems imaged with Mag-AO/CLIO in L-band.  [Rodigas et al. 2015](https://arxiv.org/pdf/1509.00007.pdf) showed that BDI has the potential to perform better at close separations than ADI
+
+***
+
+## Orbit Fitting of Wide Stellar Binaries with Gaia
+### Advisor: Adam Kraus
+### Univ of Texas at Austin, 2019 -
+
+The monitoring of orbits is one of the oldest tools used to measure the properties and evolution of astrophysical systems.  (Mis)alignment of angular momentum vectors between stellar rotation, binary orbits, circumstellar disks, and plantary system orbits all encode information about the dynamical history of the system.  Wide stellar binaries can have exceedingly long orbital periods requiring years or decades of astrometric monitoring to constrain orbital motion.  Gaia, with its exceptionally precise astrometry and proper motion, offers the promise of studying wide stellar binary orbits with no observational overhead.  The question remains as to whether Gaia astrometry is precise enough to provide meaningful constraints on orbital parameters that allow scientific study of binary orbit alignment with other components of the system.
+
+I adapted the Orbits for the Impatient (OFTI; Blunt et al. 2017) to fit Gaia relative separation and proper motion for a selection of wide binaries for which both components are well resolved.  I examined the orbital element constraints produced by fitting with Gaia only, and compared it to orbital element constraints from long time baseline astrometric monitoring from the Washington Double Star Catalog.  For example, this plot shows orbit fit results for DS Tuc B relative to DS Tuc A using Gaia astrometry (left) and WDS astrometry spanning a 100 year observational period (right).  (The WDS astrometry points are overplotted in the Gaia plot for comparison, they were not used in the Gaia fit).  The Gaia orbit fit results are significantly better constrained than WDS, and did not require 100 years of orbit monitoring to obtain.  The Gaia fit results were used in the [Newton et al. 2019](https://arxiv.org/pdf/1906.10703.pdf) paper reporting the discovery of a transiting planet around DS Tuc A, to show that the binary orbit axis is nearly aligned with the stellar spin and planet orbit axes.
+
+ ![Gaia only](../img/DSTuc_gaia_pvfit_orbits_w_wdsastr.png)| ![WDS only](../img/DSTuc_astr_plus_orbits.png)|
+|:---:|:---:|
+
+I found that Gaia alone is sufficient for producing reliable orbital element posteriors under some conditions:
+* Both objects have well-defined solutions in Gaia DR2 with [RUWE](https://gea.esac.esa.int/archive/documentation/GDR2/Gaia_archive/chap_datamodel/sec_dm_main_tables/ssec_dm_ruwe.html) ~ 1.0 and large parallax_over_error values (>~ 10)
+* The orbital period is sufficiently long that no acceleration was observed during the Gaia measurement period
+* The two objects are sufficiently separated that the PSFs do not interfere with one another
+* Niether object is itself an unresolved binary
+
+Future Gaia data releases will further improve orbital constraints by increasing the number of resolved binary systems with well-defined solutions, increasing the number for which both objects have radial velocity measurements, and introducing plane-of-sky acceleration terms.
+
+I produced a small python widget to help enable users to make use of this technique: https://github.com/logan-pearce/lofti_gaia.  The paper is currently nearing submission.
+
+***
+
 ## Orbital Motion of Wide Planetary-Mass Companions to Low-Mass Stars
 ### Advisor: Adam Kraus
 ### Univ of Texas at Austin, 2017-2019
 
 Planetary mass companions are large mass planets (on the order of 15 Mjup)  on wide orbits (100's of AU) from their host stars.  They exist in a parameter such that it is unclear if they represent the high end of planetary masses, the low end of brown dwarf masses, or if there is even is a dividing line in the substellar mass function at all.  There are a handful of these wide orbit companions that have been discovered through direct imaging surveys of young low mass stars.  Their wide orbits and young ages make them ideal for testing planet and star formation models, because they are young enough and wide enough that they can be studied relatively easily through high contrast imaging.
 
-My work has focused on an orbital analysis of one particular wide orbit planetary mass companion, GSC 6214-210 b.  It is a 15 Mjup companion to a K5 dwarf star in the Upper Scorpious star-forming region.  GSC 6214-210 b has been observed with the NIRC2 camera on the Keck II telescope for 10 years, enough to measure the relative astrometry and test for orbital motion.  I developed my own PSF-fitting relative astrometry algorithm to observe orbital motion, then fit orbital parameters to my astrometry using a custom implementation of the Orbits for the Impatient (OFTI) algorithm (Blunt et. al. 2017).
+My work has focused on an orbital analysis of one particular wide orbit planetary mass companion, GSC 6214-210 b.  It is a ~15 Mjup companion to a K5 dwarf star in the Upper Scorpious star-forming region.  GSC 6214-210 b has been observed with the NIRC2 camera on the Keck II telescope for 10 years, enough to measure the relative astrometry and test for orbital motion.  I developed my own PSF-fitting relative astrometry algorithm to observe orbital motion, then fit orbital parameters to my astrometry using a custom implementation of the Orbits for the Impatient (OFTI) algorithm (Blunt et. al. 2017).
 
 | ![NIRC2 Image and Astrometry](../img/GSC6214_2017_color1_sm.png)| ![Accepted Orbits](../img/GSC6214_acceptedorbits_black_sm.png)|
 |:---:|:---:|
