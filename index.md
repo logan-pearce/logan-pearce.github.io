@@ -19,6 +19,6 @@ I also work with Dr Adam Kraus at the University of Texas on directly imaged mas
 
 Outside of astronomy I collect US National Parks and have a little photography side business.  The images in this header are some of my favorite national park photos.  To see my photography work (beyond all the images on this site), go to [www.loganpearce.com](www.loganpearce.com).
 
-[CV](resume_logan_pearce.pdf)
+[CV](Resume.pdf)
 
 My public talks, including Astronomy on Tap ATX talk about how SETI research is done, can be found here: [https://www.youtube.com/watch?v=KAZRro0Qd7Y](https://www.youtube.com/watch?v=KAZRro0Qd7Y)
