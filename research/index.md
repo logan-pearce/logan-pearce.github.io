@@ -84,7 +84,7 @@ The Breakthrough Listen Project, at the Berkeley SETI Research Center in Berk
 
 The Gaia Data Release 2 catalog was the starting point for our target list.  Gaia DR2 contains astrometric information for 1.7 billion objects within our galaxy.  After applying strict data quality filters, we narrowed the catalog to 27 million high-quality Gaia objects within MeerKAT's field of view from which to draw our target list.
 
-| ![Pointings](https://github.com/logan-pearce/breakthroughlisten/blob/master/pointings.png)|
+| ![Pointings](../img/pointings.png)|
 |:---:|
 | <sub><sup> Anticipated pointings of the MeerKAT Large Survey Programs, plotted over a histogram of all the sources in Gaia DR2 with high quality solutions that fall within MeerKAT's field of view (grey) </sup></sub>|
 
