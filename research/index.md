@@ -27,6 +27,8 @@ In BDI, two stars are imaged simultaneously in the same wavelength and same isop
 ### Advisor: Adam Kraus
 ### Univ of Texas at Austin, 2019 -
 
+[Paper](https://arxiv.org/pdf/2003.11106.pdf)
+
 The monitoring of orbits is one of the oldest tools used to measure the properties and evolution of astrophysical systems.  (Mis)alignment of angular momentum vectors between stellar rotation, binary orbits, circumstellar disks, and plantary system orbits all encode information about the dynamical history of the system.  Wide stellar binaries can have exceedingly long orbital periods requiring years or decades of astrometric monitoring to constrain orbital motion.  Gaia, with its exceptionally precise astrometry and proper motion, offers the promise of studying wide stellar binary orbits with no observational overhead.  The question remains as to whether Gaia astrometry is precise enough to provide meaningful constraints on orbital parameters that allow scientific study of binary orbit alignment with other components of the system.
 
 I adapted the Orbits for the Impatient (OFTI; Blunt et al. 2017) to fit Gaia relative separation and proper motion for a selection of wide binaries for which both components are well resolved.  I examined the orbital element constraints produced by fitting with Gaia only, and compared it to orbital element constraints from long time baseline astrometric monitoring from the Washington Double Star Catalog.  For example, this plot shows orbit fit results for DS Tuc B relative to DS Tuc A using Gaia astrometry (left) and WDS astrometry spanning a 100 year observational period (right).  (The WDS astrometry points are overplotted in the Gaia plot for comparison, they were not used in the Gaia fit).  The Gaia orbit fit results are significantly better constrained than WDS, and did not require 100 years of orbit monitoring to obtain.  The Gaia fit results were used in the [Newton et al. 2019](https://arxiv.org/pdf/1906.10703.pdf) paper reporting the discovery of a transiting planet around DS Tuc A, to show that the binary orbit axis is nearly aligned with the stellar spin and planet orbit axes.
@@ -43,13 +45,16 @@ I found that Gaia alone is sufficient for producing reliable orbital element pos
 
 Future Gaia data releases will further improve orbital constraints by increasing the number of resolved binary systems with well-defined solutions, increasing the number for which both objects have radial velocity measurements, and introducing plane-of-sky acceleration terms.
 
-I produced a small python widget to help enable users to make use of this technique: https://github.com/logan-pearce/lofti_gaia.  The paper is currently nearing submission.
+I produced a small python widget to help enable users to make use of this technique: https://github.com/logan-pearce/lofti_gaiaDR2.  The paper is currently nearing submission.
 
 ***
 
 ## Orbital Motion of Wide Planetary-Mass Companions to Low-Mass Stars
 ### Advisor: Adam Kraus
 ### Univ of Texas at Austin, 2017-2019
+
+[Published in AJ, Vol 157:71](https://iopscience.iop.org/article/10.3847/1538-3881/aafacb/meta)
+[ArXiv entry](https://arxiv.org/abs/1812.08860)
 
 Planetary mass companions are large mass planets (on the order of 15 Mjup)  on wide orbits (100's of AU) from their host stars.  They exist in a parameter such that it is unclear if they represent the high end of planetary masses, the low end of brown dwarf masses, or if there is even is a dividing line in the substellar mass function at all.  There are a handful of these wide orbit companions that have been discovered through direct imaging surveys of young low mass stars.  Their wide orbits and young ages make them ideal for testing planet and star formation models, because they are young enough and wide enough that they can be studied relatively easily through high contrast imaging.
 
@@ -60,9 +65,6 @@ My work has focused on an orbital analysis of one particular wide orbit planetar
 | <sub><sup> NIRC2 image of GSC 6214-210, with its companion seen just to the south and east.  Inset: Relative motion of the companion found in this study.  Error bars to the left represent median error in individual image posteriors </sup></sub>|<sub><sup> 100 randomly selected orbits from the posterior of accepted orbital parameters from the OFTI algorithm. </sup></sub> |
 
 We found that orbital element posteriors for GSC 6214-210 b, along with complementary lines of evidence,  make formation at close orbital radius, consistent with the core accretion model of planet formation, and subsequent dynamical scattering to its current wide radius is highly unlikely.  Star formation pathways such as gravitational instability are more likely to explain this object's current orbit.  Other orbital studies of other wide planetary-mass companions have made similar conclusions (see Bryan et. al. 2016).  This could indicate that dynamical scattering it not a dominant formation pathway for these objects.  This work can easily be repeated for other directly imaged wide companion systems.
-
-[Published in AJ, Vol 157:71](https://iopscience.iop.org/article/10.3847/1538-3881/aafacb/meta)
-[ArXiv entry](https://arxiv.org/abs/1812.08860)
 
  [Poster from AAS 233, 2019.](https://github.com/logan-pearce/logan-pearce.github.io/blob/master/img/poster_aas233.png)
  
