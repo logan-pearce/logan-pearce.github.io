@@ -13,10 +13,11 @@ bigimg:
   - "/img/island-2.JPG" : "Waipio Valley, Hawaii"
 ---
 
-### Refereed:
-* **Logan A. Pearce**, Adam L. Kraus, Trent J. Dupuy, Michael Ireland, Aaron C. Rizzuto, Brendan Bowler, Eloise K. Birchall, and Alexander L. Wallace. (Accepted to AJ) [Orbital motion of the wide planetary-mass companion GSC6214-210 b: No evidence for dynamical scattering](https://arxiv.org/abs/1812.08860)
-* Steckloff, J.K., Soderblom, J.M., Farnsworth, K.,Chevrier, V., Hanley, J., Soto, A., Jessica, G., Grundy, W., **Pearce, L**. (Submitted to Nature Astronomy).  The Evaporation-Induced Stratification of Titan's Lakes
-* Cook, Jason, et. al. (Submitted to Icarus). The Distribution of H2O, CH3OH, and Hydrocarbon-ices on Pluto: Analysis of New Horizons Spectral Images
+### Refereed First Author:
+* **Logan A. Pearce**, Adam L. Kraus, Trent J. Dupuy, Andrew W. Mann, Elisabeth R. Newton, Benjamin M. Tofflemire, Andrew Vanderburg. (Accepted to AAS Journals) [Orbital Parameter Determination for Wide Stellar Binary Systems in the Age of Gaia](https://arxiv.org/abs/2003.11106)
+
+* **Logan A. Pearce**, Adam L. Kraus, Trent J. Dupuy, Michael Ireland, Aaron C. Rizzuto, Brendan Bowler, Eloise K. Birchall, and Alexander L. Wallace. (2019) [Orbital motion of the wide planetary-mass companion GSC6214-210 b: No evidence for dynamical scattering](https://iopscience.iop.org/article/10.3847/1538-3881/aafacb)([Arxiv](https://arxiv.org/abs/1812.08860))
+
 
 ### Non-refereed:
 * **Logan A. Pearce**, Adam L. Kraus, Trent J. Dupuy, Michael Ireland, Aaron C. Rizzuto, and Brendan Bowler., 2019, American Astronomical Society Meeting Abstracts, 233. Orbital motion of the wide planetary-mass companion GSC6214-210 b: No evidence for dynamical scattering.  [Poster](../img/poster_aas233.jpg)
