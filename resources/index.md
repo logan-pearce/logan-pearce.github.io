@@ -104,7 +104,7 @@ I was also fortunate to be awarded the Barry Goldwater Scholarship and the Astro
 - [ASF](Logan-Pearce-personal-statement.pdf)
 
 
-# These are all to be used for inspiration and guidance only.  Do not distribute without authorization.
+### These are all to be used for inspiration and guidance only.  Do not distribute without authorization.
 
 ### Lists of things.
 ---
