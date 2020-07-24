@@ -26,6 +26,7 @@ This will come from my experience with astronomy grad programs, but I'm sure its
 - My application materials for REUs
 - My application materials for Goldwater and Astronaut Scholarship awards
 - Link to list of programs offering UG summer internships for non-US UG students
+- Links to tutorials and useful things
 
 
 ### NSF Graduate Research Fellowship
@@ -109,6 +110,8 @@ I was also fortunate to be awarded the Barry Goldwater Scholarship and the Astro
 ### Lists of things.
 ---
 List of internships for non-US undergrad students: https://docs.google.com/spreadsheets/d/1_lbxn9LK6t5ydDnmGHslink5oL_MgWT3kmMc2qJKyoY/edit#gid=0
+
+Intro python tutorial by Jackie Champagne: https://github.com/jbchampagne/pythontutorials
 
 
 
