@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Logan Pearce</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt style7">
+						<a href="index.html"
+					class="logo"><strong>Logan</strong> <span>Pearce - Research</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="research/index.html">Research</a></li>
+							<li><a href="publications/index.html">Publications</a></li>
+							<li><a href="resources/index.html">Resources</a></li>
+							<li><a href="Resume.pdf">CV</a></li>
+							<li><a href="https://github.com/logan-pearce/">GitHub</a></li>
+							<li><a href="photography/index.html">Photography</a></li>
+							<li><a href="http://www.svrn.org">SVRN</a></li>
+							<li><a href="mailto: loganpearce1@email.arizona.edu">Email</a></li>
+						</ul>
+						<!--<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>-->
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+				<section id="banner" class="alt style7">
+					<div class="inner">
+						<span class="image">
+							<img src="images/star-cluster2.jpg" alt="" />
+						</span>
+						<header class="major">
+							<h1>Research</h1>
+						</header>
+					</div>
+				</section>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+
+									<!-- BDI -->
+									<span class="image main"><img src="research/binarystars.png" alt="" /></span>
+									<center><h2>Binary Differential Imaging</h2></center>
+									<center><h3>Advisor: Jared Males, University of Arizona</h3></center>
+									<p>A difficulty in direct imaging searches for faint planet or brown dwarf companions close to their host stars is to sufficiently 
+										subtract the point spread function of the host star from the image without also removing flux from the faint companion. Reference 
+										differential imaging (RDI) uses images of similar stars to build up a model reference PSF, which does not include a faint companion, 
+										which is then subtracted from the science target to reveal the flux from the companion. 
+										<a href="https://arxiv.org/abs/1509.00007" target="_blank" rel="noopener noreferrer">Binary Differential 
+										Imaging (BDI)</a> is a similar technique which uses binary stars to build up the model PSF.</p>
+
+									<p>	In BDI, two stars are imaged simultaneously in the same wavelength and same isoplanatic patch at high Strehl ratios. The reference PSF 
+										for one star is then built up using Karhuenen-Luove Image Processing (KLIP), which is principle component analysis (PCA) applied to images,
+											from images of the other, and vice versa. <a href="https://arxiv.org/abs/1509.00007" target="_blank" rel="noopener noreferrer">Rodigas et al. 2015</a> 
+											showed that 
+										BDI has the potential to perform better at close separations than ADI.</p>
+
+									<p> I analyzed a subset 17 of the target list of optimal BDI star systems developed by Rodigas et al. 2015 using a homebrewed BDI+KLIP pipeline.
+											I detected one possible candidate companion, which we will be following up with MagAO-X soon to confirm companion status.  </p>
+									<ul class="actions">
+										<center>
+										<li><a href="https://github.com/logan-pearce/cliotools" class="button next scrolly" target="_blank" rel="noopener noreferrer">GitHub Repo</a></li>
+										</center>
+									</ul>
+									<ul class="actions">
+										<li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b7b7d4f6-f94a-49c1-898b-adf2013df156" 
+											class="button fit" target="_blank" rel="noopener noreferrer">Video: Steward Observatory Early Career Scientist talk series 12-01-2021</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="research/bdi-aas239-poster.pdf" 
+											class="button fit" target="_blank" rel="noopener noreferrer">Poster: AAS239 (Canceled)</a></li>
+									</ul>
+
+									<hr>
+									
+									<!-- Boyajian's Star -->			
+									<span class="image main"><img src="research/color_image_cropped.png" alt="" /></span>
+									<center><h2>The stellar companion to Boyajian’s star</h2></center>
+									<center><h3>Advisor: Adam Kraus, University of Texas</h3></center>
+									<p> Boyajian’s Star (aka KIC 8462852, aka Tabby’s Star) has achieved noteriety in the science community due its odd and 
+										not-easily-explainable Kepler light curve (first reported in 
+										<a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.3988B/abstract" target="_blank" rel="noopener noreferrer">Boyajian et al. 2016</a>, 
+										which exhibits dips of varying depths, 
+										some extremely deep (~20%), apparently aperiodic, accompanied by a long-term dimming trend. Many ideas have been explored 
+										to try to explain the observed light curve (such as <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829L...3W/abstract" 
+										target="_blank" rel="noopener noreferrer">Wright & Sigurdsson</a>,
+										<a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...853L...8B/abstract" target="_blank" rel="noopener noreferrer">Boyajian et al. 2018</a>, 
+										<a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.473.5286W/abstract" target="_blank" rel="noopener noreferrer">Wyatt et al. 2018</a>, 
+										and others), 
+										but none yet are clear slam dunks. It has also had some noteriety in the popular imagination due to the idea that it might be 
+										explained by a Dyson sphere, even though evidence like this and this does not support this.</p>
+
+									<p><a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.3988B/abstract" target="_blank" rel="noopener noreferrer">Boyajian et al. 2016</a> 
+										also reported a possible stellar companion about 2” to the east of KIC 8462852. In our paper, we use 
+										three Keck/NIRC2 with NGS AO observational epochs spanning 5 years to show that this object exhibits common proper motion that 
+										is not consistent with chance alignment, and conclude that is a bound wide stellar companion, KIC 8462852 B, with separation of ~880 AU. 
+										We also show that two other objects in the frame are unassociated.</p>
+									
+									<p>The companion is not likely to be currently affecting the light curve of KIC 8462852, however the wide binary likely influenced the 
+										environment around KIC 8462852 A during formation and evolution, which could be a piece of the puzzle of this system.</p>
+
+								<ul class="actions">
+									<center>
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...909..216P/abstract" class="button next scrolly" 
+										target="_blank" rel="noopener noreferrer">Paper: Pearce et al. 2020</a></li>
+									</center>
+								</ul>
+								<ul class="actions">
+									<center>
+									<li><a href="https://github.com/logan-pearce/KIC8462852-BoyajiansStarPaper-2021" class="button next scrolly" 
+										target="_blank" rel="noopener noreferrer">GitHub Repo</a></li>
+									</center>
+								</ul>
+
+								<hr>
+
+								<!-- LOFTI -->
+								<center><h2>Orbit Fitting of Wide Stellar Binaries with Gaia</h2></center>
+								<center><h3>Advisor: Adam Kraus, University of Texas</h3></center>
+								<p> The monitoring of orbits is one of the oldest tools used to measure the properties and evolution of astrophysical systems. 
+									(Mis)alignment of angular momentum vectors between stellar rotation, binary orbits, circumstellar disks, and plantary system 
+									orbits all encode information about the dynamical history of the system. Wide stellar binaries can have exceedingly long orbital 
+									periods requiring years or decades of astrometric monitoring to constrain orbital motion. Gaia, with its exceptionally precise 
+									astrometry and proper motion, offers the promise of studying wide stellar binary orbits with no observational overhead. 
+									The question remains as to whether Gaia astrometry is precise enough to provide meaningful constraints on orbital parameters 
+									that allow scientific study of binary orbit alignment with other components of the system.</p>
+								<span class="image left"><img src="research/DSTuc_gaia_pvfit_orbits_w_wdsastr.png" alt="LOFTI fit results for DS Tuc AB using Gaia
+									 astrometry alone, with WDS time-series astrometry overlaid for comparison" /></span>  
+
+								<p>	I adapted the Orbits for the Impatient (OFTI; Blunt et al. 2017) to fit Gaia relative separation and proper motion for a 
+									selection of wide binaries for which both components are well resolved. I examined the orbital element constraints produced by 
+									fitting with Gaia only, and compared it to orbital element constraints from long time baseline astrometric monitoring from the
+									 Washington Double Star Catalog. For example, this plot shows orbit fit results for DS Tuc B relative to DS Tuc A using Gaia astrometry 
+									 (left) and WDS astrometry spanning a 100 year observational period (right). (The WDS astrometry points are overplotted in the Gaia 
+									 plot for comparison, they were not used in the Gaia fit). The Gaia orbit fit results are significantly better constrained than WDS, 
+									 and did not require 100 years of orbit monitoring to obtain. The Gaia fit results were used in the Newton et al. 2019 paper 
+									 reporting the discovery of a transiting planet around DS Tuc A, to show that the binary orbit axis is nearly aligned with the stellar 
+									 spin and planet orbit axes.</p>
+									
+								<p>
+									I found that Gaia alone is sufficient for producing reliable orbital element posteriors under some conditions: (1) Both objects have well-defined 
+									solutions in Gaia DR2 with RUWE ~ 1.0 and large parallax_over_error values (>~ 10)  (2) The orbital period is sufficiently long that no 
+									acceleration was observed during the Gaia measurement period  (3) The two objects are sufficiently separated that the PSFs do not interfere with 
+									one another (4) Niether object is itself an unresolved binary.  Future Gaia data releases will further improve orbital constraints by 
+									increasing the number of resolved binary systems with well-defined solutions, increasing the number for which both objects have radial 
+									velocity measurements, and introducing plane-of-sky acceleration terms.
+								</p>
+
+								<p>
+									I developed the open source python package LOFTI to do orbit fitting with Gaia astrometry.  Several recent works have made of use
+									of LOFTI and using Gaia for orbit fitting, including 
+									<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...12V/abstract" target="_blank" rel="noopener noreferrer">Venner et al. 2021</a>,
+									<a href="https://ui.adsabs.harvard.edu/abs/2020Natur.585..363V/abstract" target="_blank" rel="noopener noreferrer">Vanderburg et al. 2020</a>, and
+									<a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...880L..17N/abstract" target="_blank" rel="noopener noreferrer">Newton et al. 2019</a>.
+								</p>
+
+							<ul class="actions">
+								<center>
+								<li><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...894..115P/abstract" class="button next scrolly" 
+									target="_blank" rel="noopener noreferrer">Paper: Pearce et al. 2020</a></li>
+								</center>
+							</ul>
+							<ul class="actions">
+								<center>
+								<li><a href="https://lofti-gaia.readthedocs.io/en/latest/" class="button next scrolly" target="_blank" rel="noopener noreferrer">LOFTI docs</a></li>
+								</center>
+							</ul>
+							<ul class="actions">
+								<center>
+								<li><a href="https://github.com/logan-pearce/lofti_gaia" class="button next scrolly" target="_blank" rel="noopener noreferrer">GitHub Repo</a></li>
+								</center>
+							</ul>
+
+							<hr>
+
+							<!-- GSC 6214-210 -->
+							<center><h2>Orbital Motion of Wide Planetary-Mass Companions to Low-Mass Stars</h2></center>
+							<center><h3>Advisor: Adam Kraus, University of Texas</h3></center>
+							<p> Planetary mass companions are large mass planets (on the order of 15 Mjup)  on wide orbits (100’s of AU) from their host stars.  
+								They exist in a parameter such that it is unclear if they represent the high end of planetary masses, the low end of brown dwarf masses, 
+								or if there is even is a dividing line in the substellar mass function at all.  There are a handful of these wide orbit companions 
+								that have been discovered through direct imaging surveys of young low mass stars.  Their wide orbits and young ages make them ideal 
+								for testing planet and star formation models, because they are young enough and wide enough that they can be studied relatively easily 
+								through high contrast imaging.</p>
+
+								<span class="image right"><img src="research/GSC6214_2017_color1_sm.png" alt="My measured astrometry over 10 years, 
+									overlaid on a 2017 Keck/NIRC2 image" /></span> 
+
+							<p>	My work has focused on an orbital analysis of one particular wide orbit planetary mass companion, GSC 6214-210 b.  It is a ~15 Mjup 
+								companion to a K5 dwarf star in the Upper Scorpious star-forming region.  GSC 6214-210 b has been observed with the NIRC2 camera on 
+								the Keck II telescope for 10 years, enough to measure the relative astrometry and test for orbital motion.  I developed my own PSF-fitting 
+								relative astrometry algorithm to observe orbital motion, then fit orbital parameters to my astrometry using a custom implementation of the 
+								Orbits for the Impatient (OFTI) algorithm (Blunt et. al. 2017).</p>
+
+							<p>
+								We found that orbital element posteriors for GSC 6214-210 b, along with complementary lines of evidence,  make formation at 
+								close orbital radius, consistent with the core accretion model of planet formation, and subsequent dynamical scattering to its current 
+								wide radius is highly unlikely.  Star formation pathways such as gravitational instability are more likely to explain this object’s current orbit.  
+								Other orbital studies of other wide planetary-mass companions have made similar conclusions (see Bryan et. al. 2016).  This could indicate that 
+								dynamical scattering it not a dominant formation pathway for these objects.  This work can easily be repeated for other directly imaged wide companion 
+								systems.</p>
+
+							<p> I have also been adapting the OFTI methodology to fit wide binary stars with well-defined astrometry and proper motions in Gaia. The precision of 
+								Gaia astrometry allows us to fit one observational epoch using the stars’ relative RA/Dec, proper motion in RA/Dec, and radial velocity (either 
+								from Gaia (rare) or independant measurements). Additionally accelerations can be used to constrain orbits.</p>
+							
+							<p>  I am also a part of the orbitize! project – an open-source object-oriented python package for fitting orbital parameters to directly-imaged 
+								planet astrometry.  Orbitize! allows users to select from multiple parameter fitting methodologies, including OFTI, that are statistically robust, 
+								and outputs fits and plots of the results.  
+							</p>
+						
+							<ul class="actions">
+							<center>
+							<li><a href="https://ui.adsabs.harvard.edu/abs/2019AJ....157...71P/abstract" class="button next scrolly" 
+								target="_blank" rel="noopener noreferrer">Paper: Pearce et al. 2019</a></li>
+							</center>
+							</ul>
+							<ul class="actions">
+								<center>
+								<li><a href="https://orbitize.readthedocs.io/en/latest/" class="button next scrolly" target="_blank" rel="noopener noreferrer">orbitize! docs</a></li>
+								</center>
+							</ul>
+							<ul class="actions">
+								<center>
+								<li><a href="https://github.com/logan-pearce/olpefit" class="button next scrolly" target="_blank" rel="noopener noreferrer">GitHub Repo</a></li>
+								</center>
+							</ul>
+							<ul class="actions">
+								<li><a href="research/poster_aas233.png" 
+									class="button fit" target="_blank" rel="noopener noreferrer">Poster: AAS 233</a></li>
+							</ul>
+
+							</div>
+						</section>
+					</div>
+
+				
+					<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<center>
+								<li><a href ="mailto: loganpearce1@email.arizona.edu" class="icon regular fa-paper-plane"><span class="label">Email</span></a></li>
+								<li><a href="https://twitter.com/loganpearce" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/logan-pearce" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</center>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Logan Pearce 2022. Page Template:  <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
