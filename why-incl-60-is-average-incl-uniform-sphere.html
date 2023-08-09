@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Logan Pearce</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+        <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt style7">
+						<a href="index.html"
+					class="logo"><strong>Logan</strong> <span>Pearce - Research</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="https://ui.adsabs.harvard.edu/public-libraries/Bt9HQRu0SPq-6uqMm5lcMA">Publications</a></li>
+							<li><a href="resources.html">Resources</a></li>
+							<li><a href="outreach.html">Outreach</a></li>
+							<li><a href="Resume.pdf">CV</a></li>
+							<li><a href="https://github.com/logan-pearce/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+							<li><a href="photography/index.html" target="_blank" rel="noopener noreferrer">Photography</a></li>
+							<li><a href="http://www.svrn.org" target="_blank" rel="noopener noreferrer">SVRN</a></li>
+							<li><a href="https://loganpearce.wordpress.com/">Blog</a></li>
+							<li><a href="mailto: loganpearce1@email.arizona.edu" target="_blank" rel="noopener noreferrer">Email</a></li>
+						</ul>
+						<!--<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>-->
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+				<section id="banner" class="alt style7">
+					<div class="inner" >
+						<span class="image">
+							<img src="images/saturn_refl.jpg" alt="" />
+						</span>
+						<header class="major">
+							<h1>Direct Imaging of Exoplanets in Reflected Light with GMagAO-X</h1>
+						</header>
+					</div>
+				</section>
+
+				<!-- Main -->
+				<div id="main" class="alt">
+
+					<!-- One -->
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <h2>Why is 60 deg the average inclination for a uniform half-sphere?</h2>
+                            </header>
+                            <p>
+                                In a spherical polar coordinate system:
+                                <br>
+                                <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                   <img src="research/240px-3D_Spherical_2.svg.png">
+                                </div>
+                                <br>
+                                where$\theta = \tan^{-1} \frac{y}{x}$, $\phi = \cos^{-1} \frac{z}{r}$, $r = [x^2 + y^2 + z^2]^{1/2}$.  
+                                <br><br>
+                                
+                                When viewing a Keplerian orbit projected onto the plane of the sky, where the sky plane is the ($y$,$z$) plane and $+x$ is towards the observer, then orbital inclination is the same as $\phi$ in this system.  Inclination is symetrical about the $y$-axis, with incl $<$90$^{o}$ corresponding to a prograde or counter-clockwise orbit, and incl $>$90$^{o}$ being retrograde or clockwise.
+                                <br>
+                                So, considering a unit half-sphere in this coordinate system, with $r = 1$, $\theta$ [-90, 90], and $\phi$ [0,90] (or $x$ [-1,1], $y$ [-1,1], and $z$ [0,1]), if we draw values of $\phi$ and $\theta$ from uniform distributions on those intervals (uniformly sampling the sphere), we get a sampling of the <b>projected</b> uniform sphere that looks like<br><br>
+                                <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                    <img src="research/UnifIncl.png" width=500>
+                                </div>
+                                <br><br>
+                                Because of the projection onto the ($y,z$) plane, points near $\phi$ = 90 are more sparsely sampling the projected sphere than points near $\phi$ = 0.  Looking at the histogram of points, it's clear that $\phi$ = 60$^{o}$ is the mean value.<br><br>
+                                <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <img src="research/UnifIncl-hist.png" width=400>
+                                </div>
+
+                                <br><br>
+                                <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <h3>Mathematically</h3>
+                                </div>
+
+                                <br>
+                                The average of a function is given by
+                                $$ &lt; f &gt; \;=\; \frac{1}{b - a} \int_{a}^{b} f(x) \,dx$$
+
+                                Thus
+                                $$ &lt; \phi &gt; \;=\; \frac{1}{1 - 0} \int_{1}^{0} \arccos(z) \,dz$$
+
+                                We must use integration by parts to solve:<br>
+                                $$ $$
+
+                                $$ \begin{array}{rcll}
+                                \int u\; dv & = & u\,v - \int v\; du \\
+                                u & = & \arccos(z) \\
+                                dv & = & dz \\
+                                du & = & \frac{-1}{\sqrt{1 - z^2}}\; dz \\
+                                v & = & z \\
+                                \int_{1}^{0} \arccos(z) \,dz & = & z\; \arccos(z) \bigg\rvert_{0}^{1} - \int_{0}{1} \frac{-z}{\sqrt{1 - z^2}} dz\\
+                                & = & \left[(1\times 0) - (0\times 1])\right] + \int_{0}^{1} \frac{-z}{\sqrt{1 - z^2}} dz\\
+                                w & = & 1 - z^2\\
+                                dw & = & -2z\; dz\\
+                                & = & \int_{0}{1} \frac{1/2\; dw}{\sqrt{w}} \\
+                                & = & \sqrt{1 - z^2} \bigg\rvert_{0}^{1} \\
+                                & = & 1 \;\mathrm{radians}\\
+                                & = & 57.3^{\circ}
+                                
+                                \end{array} $$
+
+                                <br><br>
+                                <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                    <h3>Inclination in orbit fitting</h3>
+                                </div>
+                                This is why when we draw orbital parameters from prior distributions for orbit fitting (see Blunt et al. 2017, amoung many many others), we draw inclination from a distribution that is uniform in $\cos(i)$ on [-1,1] rather than uniform in $i$ on [0,180] :
+                                 <br><br>
+                                 <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                    <img src="research/UnifIncl-vs-UnifCosInc.png" width=800>
+                                </div>
+
+
+
+
+                            </p>
+                            </div>
+                        </section>
+
+									
+
+				
+					<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<center>
+								<li><a href ="mailto: loganpearce1@email.arizona.edu" class="icon regular fa-paper-plane"><span class="label">Email</span></a></li>
+								<li><a href="https://twitter.com/loganpearce" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/logan-pearce" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</center>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Logan Pearce 2022. Page Template:  <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
