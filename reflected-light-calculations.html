@@ -205,11 +205,80 @@
                     <section id="two">
                     <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
                         <h3>S/N Ratios for Atmospheric Speckle Limited Observations</h3>
+                        <h4>Get photons per sec from a model spectrum</h4>
                     </div>
                     <div class="inner">
-                    <p>
-                        TBD
-                    </p>
+                        PICASO and other models return the flux from the surface of the object, the planet in this case.  So we need to scale the flux to that arriving at the observer.
+                        $$F = I \Omega$$
+                        where $F$ = flux at Earth, $I$ = model intensity, and
+
+                        $$\Omega = \frac{R_p^2}{D^2}$$
+                        where $R_p$ = planet radius and $D$ = distance 
+                        <br><br>
+                        Next convert ergs cm$^{-1}$ s$^{-1}$ cm$^{-2}$ to photons s$^{-1}$.
+                        <br>
+                        Energy per photon per wavelength:
+                        $$E[ergs] = \frac{hc}{\lambda[cm]}$$
+
+                        Number of photons per wavelength:
+                        $$n_{\gamma}[\frac{\gamma}{cm\,s\,cm^2}] = \frac{F_{\lambda}(\lambda)[\frac{ergs}{cm\,s\,cm^2}]}{E[ergs]}$$
+
+                        Then the total flux in the filter is the sum over all wavelengths of the flux times the filter transmission curve:
+                        $$\mathrm{Total \; flux} \;[\gamma \;s^{-1} cm^{-2}] = \sum(F_\lambda(\lambda) [\gamma \;cm^{-1} s^{-1} cm^{-2}] \times R(\lambda) \times \delta\lambda [cm] )$$
+
+                        where $R(\lambda)$ is the filter transmission curve as a function of wavelength, and $\delta\lambda$ is the interval the spectrum is sampled in.<br><br>
+
+                        Now multiply by the telescope collecting area:
+                        $$\mathrm{Total \; flux} \;[\gamma \;s^{-1}] = \mathrm{Total \; flux} \;[\gamma \;s^{-1} cm^{-2}] \times \pi r^2$$
+                        where r is the radius of the primary mirror.  <br>Done.  Total flux in a filter in photons per second.<br><br>
+                        <hr>
+                        <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                            <h4>Noise in the atmospheric speckle limited regime</h4>
+                        </div>
+                        <div class="inner">
+                            For a derivation of this and discussion of speckles in AO+coronagraph ground-based systems, see <a href="https://ui.adsabs.harvard.edu/abs/2021PASP..133j4504M/abstract">Males et al. 2021.</a><br>
+
+                            The noise in a single resolution element (1 $\lambda$/D) located at the planet's separation and position angle from the star ($\overrightarrow{r_p}$) can be written as:
+
+                            $$
+                                \sigma_h^2 = \underbrace{I_* \Delta t}_\text{Star poisson noise} \left[\underbrace{I_c + I_{as} + I_{qs}}_\text{Poisson noise from star halo at planet location}  + \underbrace{I_*[\tau_{as}(I_{as}^2 + 2[I_c I_{as} + I_{as} I_{qs}])}_\text{Atm speckles} + \underbrace{\tau_{qs}(I_{qs}^2 + 2I_c I_{qs})]}_\text{Quasistatic speckles} \right]\;\; + \\
+                                \underbrace{I_p \Delta t}_\text{Planet poisson noise} \;\; + \underbrace{I_{\rm{sky}}\Delta t N_{\rm{pix}}(\lambda)}_\text{Sky background poisson noise} \;\; + \underbrace{\left(RN \frac{\Delta t}{t_{\rm{exp}}}\right)^2}_\text{Read noise} \;\; + \underbrace{I_{dc}\Delta t N_{\rm{pix}}(\lambda)}_\text{dark current}
+                                $$
+
+
+                            where:<br>
+                            <ul>
+                                <li>$I_*$ is the peak star intensity without a coronagraph in photons/sec </li>
+                                <li> $I_c$ is the fractional contribution of intensity from residual diffraction from coronagraph, </li>
+                                <li> $I_{as}$ is the contribution from atmospheric speckles,</li>
+                                <li> $I_{qs}$ is contribution from speckles caused by instrument imperfections ("quasi-static" speckles),</li> 
+                                <li>$\tau_{as}$ is the average lifetime of atmospheric speckles, </li>
+                                <li>$\tau_{qs}$ is the average lifetime of quasi-static speckles, </li>
+                                <li>$I_p$ is the planet intensity in photons/sec, </li>
+                                <li>$I_{sky}$ is the average sky background count rate, </li>
+                                <li> RN is the read noise, </li>
+                                <li> $I_{dc}$ is the dark current count rate, </li>
+                                <li> $\Delta t$ is the observation time,</li>
+                                <li> $t_{exp}$ is the exposure time of a single frame. </li>
+                                <li> $N_{pix}$ is the number of pixels within the area of a circle of a 1 $\lambda$/D radius, </li>
+                                <li>with $A_{\rm{\lambda/D}} \rm{[mas]} = \pi r^2, r = 0.5\lambda/D,\; \lambda/D \rm{[mas]} = 0.2063 \frac{\lambda [\mu m]}{D [\rm{m}]} \times 10^{-3}$ and A$_{pix}$ = pixel side length [mas$^2$], then $N_{pix} = A_{\rm{\lambda/D}} \rm{[mas]} / A_{pix} \rm{[mas]}$.</li>
+                            </ul>
+                              This is Males et al. 2021 Eqn 7 plus the typical noise terms.
+                              <br>
+
+                              If you assume, as in Males+ 2021, that you have a perfectly functioning coronagraph and instrument such that $I_{qs}$ and $I_{c}$ terms are negligible compared to the atmospheric speckle terms, we are then in the speckle-noise limited regime.  Additionally, for the purposes of these calculations I will assume that the sky, read noise, and dark current are all negligible compared to the speckles.  So:
+                            $$\sigma^2 = I_* \Delta t \left[I_{as}  + {I_*\tau_{as}I_{as}^2}\right]\;\; + I_p \Delta t$$
+
+                            and S/N becomes:
+                            $$S/N \approx \frac{I_p \Delta t}{\sqrt{I_* \Delta t \left[I_{as}  + {I_*\tau_{as}I_{as}^2}\right]\;\; + I_p \Delta t}}$$
+                            and then:
+                            $$\Delta t = \left(\frac{S/N}{I_p}\right)^2 \left[I_* \left(I_{as} + {I_*\tau_{as}I_{as}^2}\right) + I_p \right]
+                            $$
+
+                        </div>
+
+
+
                 </div>
 
 				
