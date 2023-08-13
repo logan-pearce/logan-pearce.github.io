@@ -218,19 +218,19 @@
                         Next convert ergs cm$^{-1}$ s$^{-1}$ cm$^{-2}$ to photons s$^{-1}$.
                         <br>
                         Energy per photon per wavelength:
-                        $$E[ergs] = \frac{hc}{\lambda[cm]}$$
+                        $$E\,[ergs] = \frac{hc}{\lambda[cm]}$$
 
                         Number of photons per wavelength:
-                        $$n_{\gamma}[\frac{\gamma}{cm\,s\,cm^2}] = \frac{F_{\lambda}(\lambda)[\frac{ergs}{cm\,s\,cm^2}]}{E[ergs]}$$
+                        $$n_{\gamma}\left[\frac{\gamma}{cm\,s\,cm^2}\right] = \frac{F_{\lambda}(\lambda)\left[\frac{ergs}{cm\,s\,cm^2}\right]}{E\,[ergs]}$$
 
                         Then the total flux in the filter is the sum over all wavelengths of the flux times the filter transmission curve:
-                        $$\mathrm{Total \; flux} \;[\gamma \;s^{-1} cm^{-2}] = \sum(F_\lambda(\lambda) [\gamma \;cm^{-1} s^{-1} cm^{-2}] \times R(\lambda) \times \delta\lambda [cm] )$$
+                        $$\mathrm{Total \; flux} \;[\gamma \;s^{-1} cm^{-2}] = \sum(F_\lambda(\lambda)\; [\gamma \;cm^{-1} s^{-1} cm^{-2}] \times R(\lambda) \times \delta\lambda \;[cm] )$$
 
                         where $R(\lambda)$ is the filter transmission curve as a function of wavelength, and $\delta\lambda$ is the interval the spectrum is sampled in.<br><br>
 
                         Now multiply by the telescope collecting area:
                         $$\mathrm{Total \; flux} \;[\gamma \;s^{-1}] = \mathrm{Total \; flux} \;[\gamma \;s^{-1} cm^{-2}] \times \pi r^2$$
-                        where r is the radius of the primary mirror.  <br>Done.  Total flux in a filter in photons per second.<br><br>
+                        where $r$ is the radius of the primary mirror.  <br>Done.  Total flux in a filter in photons per second.<br><br>
                         <hr>
                         <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
                             <h4>Noise in the atmospheric speckle limited regime</h4>
@@ -241,7 +241,7 @@
                             The noise in a single resolution element (1 $\lambda$/D) located at the planet's separation and position angle from the star ($\overrightarrow{r_p}$) can be written as:
 
                             $$
-                                \sigma_h^2 = \underbrace{I_* \Delta t}_\text{Star poisson noise} \left[\underbrace{I_c + I_{as} + I_{qs}}_\text{Poisson noise from star halo at planet location}  + \underbrace{I_*[\tau_{as}(I_{as}^2 + 2[I_c I_{as} + I_{as} I_{qs}])}_\text{Atm speckles} + \underbrace{\tau_{qs}(I_{qs}^2 + 2I_c I_{qs})]}_\text{Quasistatic speckles} \right]\;\; + \\
+                                \sigma^2 = \underbrace{I_* \Delta t}_\text{Star poisson noise} \left[\underbrace{I_c + I_{as} + I_{qs}}_\text{Poisson noise from star halo at planet location}  + \underbrace{I_*[\tau_{as}(I_{as}^2 + 2[I_c I_{as} + I_{as} I_{qs}])}_\text{Atm speckles} + \underbrace{\tau_{qs}(I_{qs}^2 + 2I_c I_{qs})]}_\text{Quasistatic speckles} \right]\;\; + \\
                                 \underbrace{I_p \Delta t}_\text{Planet poisson noise} \;\; + \underbrace{I_{\rm{sky}}\Delta t N_{\rm{pix}}(\lambda)}_\text{Sky background poisson noise} \;\; + \underbrace{\left(RN \frac{\Delta t}{t_{\rm{exp}}}\right)^2}_\text{Read noise} \;\; + \underbrace{I_{dc}\Delta t N_{\rm{pix}}(\lambda)}_\text{dark current}
                                 $$
 
@@ -280,6 +280,7 @@
 
 
                 </div>
+                <hr>
 
 				
 					<!-- Footer -->
