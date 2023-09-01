@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Logan Pearce</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+        <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt style7">
+						<a href="index.html"
+					class="logo"><strong>Logan</strong> <span>Pearce - Research</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="https://ui.adsabs.harvard.edu/public-libraries/Bt9HQRu0SPq-6uqMm5lcMA">Publications</a></li>
+							<li><a href="resources.html">Resources</a></li>
+							<li><a href="outreach.html">Outreach</a></li>
+							<li><a href="Resume.pdf">CV</a></li>
+							<li><a href="https://github.com/logan-pearce/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+							<li><a href="photography/index.html" target="_blank" rel="noopener noreferrer">Photography</a></li>
+							<li><a href="http://www.svrn.org" target="_blank" rel="noopener noreferrer">SVRN</a></li>
+							<li><a href="https://loganpearce.wordpress.com/">Blog</a></li>
+							<li><a href="mailto: loganpearce1@email.arizona.edu" target="_blank" rel="noopener noreferrer">Email</a></li>
+						</ul>
+						<!--<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>-->
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+				<section id="banner" class="alt style7">
+					<div class="inner" >
+						<span class="image">
+							<img src="images/saturn_refl.jpg" alt="" />
+						</span>
+						<header class="major">
+							<h1>"Typical" Contrast-Weighted Average of Projected Separation, Contrast, and Phase Throughout an Orbit</h1>
+						</header>
+					</div>
+				</section>
+
+				<!-- Main -->
+				<div id="main" class="alt">
+
+					<!-- One -->
+                    <section id="one">
+                        <div class="inner">
+                            For the <a href="reflected-light-calculations.html"> interactive plots</a> of GMagAO-X and MagAO-X RV-detected planets that are targets for reflected light imaging campaign, we quantified the values at the maximum projected separation and the "most typical" values using the weighted average, weighted by contrast squared.<br><br>
+
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <h3>Phase at maximum projected separation</h3>
+                            </div>
+                            For a face-on circular orbit there is no maximum projected separation and the phase is 90$^\circ$ (quadrature) throughout the orbit.  If the orbit is inclined, quadrature will occur at both the nodes, the point in the sky plane where the planet goes from behind the star to infront of the star and vice versa, and the nodes will be at the points of maximum projected separation.<br>
+
+                            However for eccentricity $>$ 0, the maximum projected separation will occur away from the nodes and thus at a different phase.  This plot show a 1 Mjup planet around a 1 Msun star at 1 au with inclination = 50$^\circ$ and four different eccentricities: 0, 0.2, 0.4, 0.8.  The phase at each point of the orbit is shown by the colormap, with quadrature being white, and the line of nodes marked by the grey x's and line.  The location of max projected separation is marked by the orange x's and the phase at that location is annotated in the bottom corner.  We see that as eccentricity increases the location of max separation occurs further and further from the nodes and quadrature.
+
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <img src="research/phase-at-max-sep-vs-ecc.png" width=700>
+                            </div><br><br>
+
+                            This plot shows a 2d histogram of the eccentricity/phase relationship for all the planets in the MagAO-X target list <a href="TargetList-GMagAOX-Max-separation-contrast.html" target="_blank" rel="noopener noreferrer">(shown here)</a>.  We see this relation clearly in that as eccentricity increases the phase at maximum separation occurs at an increasingly wider range of phases.
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <img src="research/phase-vs-ecc.png" width=500>
+                                <br>
+                            
+                            <a href="https://github.com/logan-pearce/Reflected-Light-Public-Release/blob/main/Generating-Target-List-and-Plots/Phase%20at%20max%20separation.ipynb" target="_blank" rel="noopener noreferrer" class="button next scrolly">Notebook for producing these plots</a>
+                            </div>
+                            <br><br>
+
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <h3>Typical Separation</h3>
+                            </div>
+
+                            To find the "typical" separation we took the weighted least squares mean using contrast as weights.
+
+                            $$<\rho> = \sum{}
+                            
+
+
+
+
+                    </div>
+                    </section>
+					<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<center>
+								<li><a href ="mailto: loganpearce1@email.arizona.edu" class="icon regular fa-paper-plane"><span class="label">Email</span></a></li>
+								<li><a href="https://twitter.com/loganpearce" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://bsky.app/profile/loganpearce.com" class="icon brands fa-cloud"><span class="label">BlueSky</span></a></li>
+                                <li><a href="https://github.com/logan-pearce" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</center>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Logan Pearce 2022. Page Template:  <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
