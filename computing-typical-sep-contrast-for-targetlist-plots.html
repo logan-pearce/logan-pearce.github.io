@@ -100,7 +100,33 @@
 
                             To find the "typical" separation we took the weighted least squares mean using contrast as weights.
 
-                            $$<\rho> = \sum{}
+                            $$<\rho> = \frac{\sum_i \rho_i * w_i^2}{\sum_i w_i^2 }$$<br>
+                            $$< C > = \frac{\sum_i C_i * w_i^2}{\sum_i w_i^2}$$<br>
+                            $$<\alpha> = \frac{\sum_i \alpha_i * w_i^2}{\sum_{i} w_i^2} $$
+                            where:<br>
+                            $\rho_i$ is projected separation at each orbit point<br>
+                            $C_i$ is contrast at each orbit point<br>
+                            $\alpha_i$ is phase at each orbit point<br>
+                            $w_i$ is the weighting at each orbit point, which is $C_i$ here, where $C_i$ is acting as $\frac{1}{\sigma}$ in the WLS equation.<br><br>
+
+                            However we are interested in the typical separation and contrast we will see for the planet that is outside the inner working angle.  So any orbit points with $\rho_i\; < $ IWA are excluded from the WLS.  <br><br>
+
+                            This plot shows an example planet with a circular orbit and incl = 60 deg.  The phase at each orbit point is shown by the color map; the line of nodes is marked by grey x's and dotted grey line.  The closest projected separation if shown by the orange x's, and the location of the "typical" separation is shown by the purple x's.
+
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <img src="research/example-typical-sep-orbit.png" width=700>
+                            </div><br><br>
+
+                            This plot shows the same planet as above in separation on the left and contrast on the right.  Blue lines give the full orbit, orange lines show only the parts of the orbit that are greater than the IWA, shaded grey, which went into the typical calculation.  The orange and purple lines and x's are the same as above.  The grey line marks the typical contrast, and the turquoise x's mark the typical phase computed from the above equations.
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <img src="research/example_typical_sep_cont.png" width=700>
+                            <br><br>
+                            
+                            
+                            <a href="https://github.com/logan-pearce/Reflected-Light-Public-Release/blob/main/Generating-Target-List-and-Plots/2Target%20List%20-%20Compute%20Typical%20and%20Max%20Separation-Contrast-Phase%20-%20USE%20THIS%20ONE%20TO%20COMPUTE%20ORBITS%20DF.ipynb" target="_blank" rel="noopener noreferrer" class="button next scrolly">Notebook for producing these plots</a>
+                            </div>
+                            <br><br>
+
                             
 
 
