@@ -133,11 +133,11 @@
                             Because filters have all different shapes, the average flux in the filter can't be written as the flux at the central wavelength.  So the convention is typically to report the flux at the central wavelength as the flux in the filter.  This will require interpolating the flux array to get the flux at the central wavelength.  One way to do it is:
                             <pre>
                                 <code>
-                                    from scipy.interpolate import interp1d
-                                    # create the interpolation function:
-                                    interpfunc = interp1d(spectrum_wavelength,spectrum_flux, fill_value="extrapolate")
-                                    # Interpolate the filter's central wavelength in the spectrum's flux array:
-                                    F_lambda_0 = interpfunc(lambda_0)
+from scipy.interpolate import interp1d
+# create the interpolation function:
+interpfunc = interp1d(spectrum_wavelength,spectrum_flux, fill_value="extrapolate")
+# Interpolate the filter's central wavelength in the spectrum's flux array:
+F_lambda_0 = interpfunc(lambda_0)
                                 </code>
                             </pre>
                             <a href="https://pysynphot.readthedocs.io/en/latest/spectrum.html#pysynphot-spectrum" target="_blank" rel="noopener noreferrer">Pysynphot</a> also has an easy interface for sampling a "source spectrum" object at a specific wavelength.
@@ -149,24 +149,29 @@
                             </div>
 
                             Another way to do it is compute the weighted average of the flux multiplied by the filter curve.
-                            $$\overline{F_\lambda(\lambda)} = \frac{\sum F_\lambda(\lambda) \times R(\lambda)}{ \sum R(\lambda)}$$
+                            $$\overline{F_\lambda(\lambda)} = \frac{\sum F_\lambda(\lambda) \times R(\lambda) \times \lambda \times \delta\lambda}{ \sum R(\lambda)  \times \lambda \times \delta\lambda}$$
 
                             In code this can be done:
                             <pre>
                                 <code>
-                                    from scipy.interpolate import interp1d
-                                    import numpy as np
-                                    ### We need to interpolate the spectrum's flux array onto the filter's wavelength array so they can be multiplied:
-                                    # First cut off areas of spectrum outside the filter curve to avoid interpolation errors:
-                                    ind = np.where((spectrum_wavelength > np.min(filter_wavelength)) & spectrum_wavelength < np.max(filter_wavelength)))[0]
-                                    # Make interpolation function:
-                                    interpfunc = interp1d(spectrum_wavelength[ind],spectrum_flux[ind], fill_value="extrapolate")
-                                    # interpolate the spectrum's flux on the filter's wavelength array:
-                                    flux_on_filter_wavelength_grid = interpfunc(filter_wavelength)
-                                    # Multiply flux by filter transmission:
-                                    filter_times_flux = flux_on_filter_wavelength_grid * filter_transmission
-                                    # Compute weighted average:
-                                    filter_weighted_average = np.sum(filter_times_flux) / np.sum(filter_transmission)
+from scipy.interpolate import interp1d
+import numpy as np
+### We need to interpolate the spectrum's flux array onto the filter's wavelength array so they can be multiplied:
+# First cut off areas of spectrum outside the filter curve to avoid interpolation errors:
+ind = np.where((spectrum_wavelength > np.min(filter_wavelength)) & spectrum_wavelength < np.max(filter_wavelength))[0]
+# Make interpolation function:
+interpfunc = interp1d(spectrum_wavelength[ind],spectrum_flux[ind], fill_value="extrapolate")
+# interpolate the spectrum's flux on the filter's wavelength array:
+flux_on_filter_wavelength_grid = interpfunc(filter_wavelength)
+# Multiply flux by filter transmission:
+filter_times_flux = flux_on_filter_wavelength_grid * filter_transmission
+
+# compute dlambda
+dl = np.mean([filter_wavelength[i] - filter_wavelength[i-1] for i in range(1,len(filter_wavelength))])
+
+# Compute weighted average:
+filter_weighted_average = np.sum(filter_times_flux * filter_wavelength * dl) / np.sum(filter_transmission * filter_wavelength * dl)
+
                                 </code>
                             </pre>
 
@@ -180,12 +185,12 @@
                                 <h3>Comparing them:</h3>
                             </div>
 
-                            The two methods are close but aren't exactly the same. This figure shows the two methods applied to the spectrum shown above.  Because of spectrum features the two conventions typically don't agree.  In the i$^{\prime}$, $\lambda_0$ happens to fall on an absorption feature and so is lower than the average, while in J band, absorption features on either side of $\lambda_0$ make F($\lambda_0$) much higher than the average.  Coincidentally they are almost the same in H band for this model.
+                            The two methods are close but aren't exactly the same. This figure shows the two methods applied to the spectrum shown above.  Because of spectrum features the two conventions typically don't agree.  In the r$^{\prime}$, $\lambda_0$ happens to fall on an absorption feature and so is lower than the average, while in J band, absorption features on either side of $\lambda_0$ make F($\lambda_0$) much higher than the average.  Coincidentally they are almost the same in H band for this model.
 
                             So neither are ``correct" (whatever that means here), but both are used.  It's important to define which one is being used and plot them appropriately.<br><br>
 
                             <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
-                                <img src="research/different-filter-fluxes.png" width=500>
+                                <img src="images/different-filter-fluxes.png" width=500>
                             </div><br><br>
 
 
