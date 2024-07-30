@@ -240,20 +240,19 @@
                             The noise in a single resolution element (1 $\lambda$/D) located at the planet's separation and position angle from the star ($\overrightarrow{r_p}$) can be written as:
 
                             $$
-                                \sigma^2 = \underbrace{I_* \Delta t}_\text{Star poisson noise} \left[\underbrace{I_c + I_{as} + I_{qs}}_\text{Poisson noise from star halo at planet location}  + \underbrace{I_*[\tau_{as}(I_{as}^2 + 2[I_c I_{as} + I_{as} I_{qs}])}_\text{Atm speckles} + \underbrace{\tau_{qs}(I_{qs}^2 + 2I_c I_{qs})]}_\text{Quasistatic speckles} \right]\;\; + \\
-                                \underbrace{I_p \Delta t}_\text{Planet poisson noise} \;\; + \underbrace{I_{\rm{sky}}\Delta t N_{\rm{pix}}(\lambda)}_\text{Sky background poisson noise} \;\; + \underbrace{\left(RN \frac{\Delta t}{t_{\rm{exp}}}\right)^2}_\text{Read noise} \;\; + \underbrace{I_{dc}\Delta t N_{\rm{pix}}(\lambda)}_\text{dark current}
+                            \sigma^2 = \underbrace{I_{s,*} \Delta t}_\text{Star Poisson noise} \left[\underbrace{I_c + I_{as} + I_{qs}}_\text{Star halo at planet location}  + \underbrace{I_{s,*}[\tau_{as}(I_{as}^2 + 2[I_c I_{as} + I_{as} I_{qs}])}_\text{Atm speckles} + \underbrace{\tau_{qs}(I_{qs}^2 + 2I_c I_{qs})]}_\text{Quasistatic speckles} \right]\;\; + \\
+                            \underbrace{I_{p,*} \Delta t}_\text{Planet Poisson noise} \;\; + \underbrace{I_{\rm{sky}}\Delta t N_{\rm{pix}}(\lambda)}_\text{Sky background poisson noise} \;\; + \underbrace{\left(RN \frac{\Delta t}{t_{\rm{exp}}}\right)^2}_\text{Read noise} \;\; + \underbrace{I_{dc}\Delta t N_{\rm{pix}}(\lambda)}_\text{dark current}
                                 $$
 
 
                             where:<br>
                             <ul>
-                                <li>$I_*$ is the peak star intensity without a coronagraph in photons/sec </li>
+                                <li>$I_{s,*}/I_{p,*}$ is the peak intensity in an aperture of size $\lambda$/D centered on the Airy core without a coronagraph in photons/sec/($\lambda$/D), incorporating telescope and instrument throughput, with $I_* = I \times T \times \pi/4 \times \rm{Strehl\;Ratio}$, where $I$ is the star/planet's intensity in a given filter, $T$ is the telescope and instrument throughput, and $\pi/4$ is the amount of starlight contained in the Airy core in an aperture of size $\lambda/D$, </li>
                                 <li> $I_c$ is the fractional contribution of intensity from residual diffraction from coronagraph, </li>
                                 <li> $I_{as}$ is the contribution from atmospheric speckles,</li>
                                 <li> $I_{qs}$ is contribution from speckles caused by instrument imperfections ("quasi-static" speckles),</li> 
                                 <li>$\tau_{as}$ is the average lifetime of atmospheric speckles, </li>
                                 <li>$\tau_{qs}$ is the average lifetime of quasi-static speckles, </li>
-                                <li>$I_p$ is the planet intensity in photons/sec, </li>
                                 <li>$I_{sky}$ is the average sky background count rate, </li>
                                 <li> RN is the read noise, </li>
                                 <li> $I_{dc}$ is the dark current count rate, </li>
@@ -269,18 +268,26 @@
                             $$\sigma^2 = I_* \Delta t \left[I_{as}  + {I_*\tau_{as}I_{as}^2}\right]\;\; + I_p \Delta t$$
 
                             and S/N becomes:
-                            $$S/N \approx \frac{I_p \Delta t}{\sqrt{I_* \Delta t \left[I_{as}  + {I_*\tau_{as}I_{as}^2}\right]\;\; + I_p \Delta t}}$$
+                            $$S/N \approx \frac{I_{p,*} \Delta t}{\sqrt{I_{s,*} \Delta t \left[I_{as}  + {I_{s,*}\tau_{as}I_{as}^2}\right]\;\; + I_{p,*} \Delta t}}$$
                             and then:
-                            $$\Delta t = \left(\frac{S/N}{I_p}\right)^2 \left[I_* \left(I_{as} + {I_*\tau_{as}I_{as}^2}\right) + I_p \right]
+                            $$\Delta t = \left(\frac{S/N}{I_p}\right)^2 \left[I_{s,*} \left(I_{as} + {I_{s,*}\tau_{as}I_{as}^2}\right) + I_{p,*} \right]
                             $$
+
+                            Here is an example using ReflectX models for GJ 876 b and c at quadrature, kzz = 1e9, and fsed = 0.03:
+
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                              <img src="research/snr-vs-time-for-GJ876-25.4m.png" width="800">
+                            </div>
+
+
+                        
 
                         </div>
                         <hr>
                       <!-- Three -->
                 <section id="three">
                   <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
-                      <h3><ul class="icons">
-                        <li><a href ="mailto: loganpearce1@email.arizona.edu" class="icon fa-dice-one"></a></li>3: Viewing phase angle given orbital elements</h3></li></ul>
+                      <h3>3: Viewing phase angle given orbital elements</h3>
                   </div>
                     <div class="inner">
                       Viewing phase angle $\alpha$ is the phase of the planet as seen by the observer at Earth, exactly as we see the Moon go through phases.  It is defined from $0^{\circ}\le \alpha \le 180^{\circ}$ with $0^{\circ}$ being full phase -- the disk of the planet visible from Earth is fully illuminated -- and $180^{\circ}$ being new phase -- the disk visible from Earth is fully in darkness with no illumination.  When we're trying to observe planets in reflected light the phase has a direct impact on the contrast and observability.  There is degeneracy between phase and planet radius, illustrated by Figure 1 of <a href="https://ui.adsabs.harvard.edu/abs/2017PASP..129c4401N/abstract">Nayak et al. 2017</a>:<br>

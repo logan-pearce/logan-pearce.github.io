@@ -187,17 +187,38 @@ filter_weighted_average = np.sum(filter_times_flux * filter_wavelength * dl) / n
 
                             The two methods are close but aren't exactly the same. This figure shows the two methods applied to the spectrum shown above.  Because of spectrum features the two conventions typically don't agree.  In the r$^{\prime}$, $\lambda_0$ happens to fall on an absorption feature and so is lower than the average, while in J band, absorption features on either side of $\lambda_0$ make F($\lambda_0$) much higher than the average.  Coincidentally they are almost the same in H band for this model.
 
-                            So neither are ``correct" (whatever that means here), but both are used.  It's important to define which one is being used and plot them appropriately.<br><br>
+                            So neither are ``correct" (whatever that means), but both are used.  It's important to define which one is being used and plot them appropriately.<br><br>
 
                             <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
                                 <img src="images/different-filter-fluxes.png" width=500>
                             </div><br><br>
 
+                            <br>
+                            <hr>
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <h2>Computing Magnitudes and Colors</h2>
+                            </div>
+                           
+                            To use these to compute Vega magnitudes, we need to normalize the flux in the filters computed above to the Vega spectrum in these filters. You can get a model spectrum of Vega (aka Alpha Lyr) from <a href="https://www.stsci.edu/hst/instrumentation/reference-data-for-calibration-and-tools/astronomical-catalogs/calspec" target="_blank" rel="noopener noreferrer">HST CALSPEC</a> or from Pysynphot as above. Using either of the above methods, compute the flux of your star and of Vega in the desired filter, then convert to Vega mags as
+                            $$m = -2.5\, \rm{log\left(\frac{F_{\lambda,*}}{F_{\lambda,Vega}}\right)}$$
+                            
+                            Then the color between two filters is just the magnitude in one filter minus the magnitude in the other
+                            $$\rm{color} = \rm{mag_{f1}} - \rm{mag_{f2}}$$
 
+                            <br>
+                            The difference in the two flux calculation methods can sometimes yield differences significant enough to matter. As an illustration I will use an example of computing the colors of a Hydrogen-dominated white dwarf with Teff = 5000K in two filters, the SDSS $z^{\prime}$ filter ($\lambda_0 = 0.894\mu$m) and the MagAO-X $z^{\prime}$ filter ($\lambda_0 = 0.908\mu$m). SDSS filter curves can be found at the <a href="http://svo2.cab.inta-csic.es/svo/theory/fps3/index.php?id=SLOAN/SDSS.gprime_filter&&mode=browse&gname=SLOAN&gname2=SDSS#filter" target="_blank" rel="noopener noreferrer">SVO Filter Profile Service</a>, MagAO-X filter curves can be found in <a href="https://magao-x.org/docs/handbook/observers/filters.html" target="_blank" rel="noopener noreferrer">instrument handbook</a>. I used <a href="http://svo2.cab.inta-csic.es/theory/newov2/index.php?models=koester2" target="_blank" rel="noopener noreferrer">Hydrogen-dominated WD models from Koester et al. 2009</a>. 
+                            
+                            Note that the Koester models (as with many stellar spectral models) are computed from the surface of the star, while the Vega model from CALSPEC is as observed on Earth, so we need to scale the flux to that arriving at the observer.
+                            $$F = I \Omega$$
+                            where $F$ = flux at Earth, $I$ = model intensity, and
+    
+                            $$\Omega = \frac{R_p^2}{D^2}$$
+                            where $R_p$ = planet radius and $D$ = distance. For this example I used the average WD radius of 0.01 Rsun and the distance to Vega, 7.68 pc. Since I'm examining color here this isn't very important, since color compares the shape of the flux and this just scales the magnitude, so it shouldn't impact the colors. Nevertheless it is important to keep track of what your model assumptions are!<br><br>
 
-
-
-
+                            <div class="inner" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <img src="research/Avefilter-vs-Lambda0-colors-plot.png" width=600>
+                            </div><br>
+                            This plot shows the flux computed for the WD (blue) and Vega (purple) in the SDSS and MagAO-X $z^{\prime}$ filters using the average filter flux method (circles) and the flux at the effective wavelength (stars). Due to Vega spectral features, the two method return slightly different results. The SDSS - MagAOX color computed using the avg flux method is 0.011 mags while for the central flux method it is 0.037 mags. Not a huge difference, but a different nonetheless.
 
                     </div>
                     </section>
@@ -205,12 +226,10 @@ filter_weighted_average = np.sum(filter_times_flux * filter_wavelength * dl) / n
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<center>
 								<li><a href ="mailto: loganpearce1@email.arizona.edu" class="icon regular fa-paper-plane"><span class="label">Email</span></a></li>
 								<li><a href="https://twitter.com/loganpearce" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="https://bsky.app/profile/loganpearce.com" class="icon brands fa-cloud"><span class="label">BlueSky</span></a></li>
                                 <li><a href="https://github.com/logan-pearce" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							</center>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Logan Pearce 2022. Page Template:  <a href="https://html5up.net">HTML5 UP</a></li>
